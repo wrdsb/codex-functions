@@ -1,13 +1,14 @@
-module.exports = function (context, message) {
+module.exports = function (context, message, document) {
 
-    console.log(context);
-    console.log(message);
-    //context.bindings.employeeDocument = JSON.stringify({ 
-        //id: context.bindings.myQueueItem.name + "-" + context.bindings.myQueueItem.employeeId,
-        //name: context.bindings.myQueueItem.name,
-        //employeeId: context.bindings.myQueueItem.employeeId,
-        //address: context.bindings.myQueueItem.address
-    //});
+    context.log(context);
+    context.log(message);
+    context.log(document);
+
+    context.bindings.document = JSON.stringify({ 
+        id: context.bindings.message.id,
+        description: context.bindings.message.description,
+        category: context.bindings.message.category
+    });
 
     context.done();
 };

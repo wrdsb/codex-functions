@@ -1,6 +1,13 @@
-var azure = require('azure');
+module.exports = function (context, message) {
 
-module.exports = function(context, message) {
-    context.log('Node.js ServiceBus queue trigger function processed message', message);
+    console.log(context);
+    console.log(message);
+    //context.bindings.employeeDocument = JSON.stringify({ 
+        //id: context.bindings.myQueueItem.name + "-" + context.bindings.myQueueItem.employeeId,
+        //name: context.bindings.myQueueItem.name,
+        //employeeId: context.bindings.myQueueItem.employeeId,
+        //address: context.bindings.myQueueItem.address
+    //});
+
     context.done();
 };

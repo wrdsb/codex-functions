@@ -1,0 +1,11 @@
+{
+  "name": "people_inbound",
+  "version": "0.0.1",
+  "description": "Processes messages from the people_inbound Service Bus topic.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "ipps_employee_groups_inbound",
+  "version": "0.0.1",
+  "description": "Processes messages from the ipps_employee_groups_inbound Service Bus topic.",
+  "main": "index.js",
+  "dependencies": {
+    "azure": "^2.0.0-preview"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}

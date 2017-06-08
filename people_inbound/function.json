@@ -3,7 +3,7 @@
     {
       "type": "serviceBusTrigger",
       "name": "message",
-      "topicName": "ipps_employee_groups_inbound",
+      "topicName": "people_inbound",
       "subscriptionName": "codex-functions",
       "connection": "AzureWebJobsServiceBus",
       "accessRights": "manage",
@@ -13,7 +13,7 @@
       "type": "documentDB",
       "name": "document",
       "databaseName": "codex",
-      "collectionName": "ipps_employee_groups",
+      "collectionName": "people",
       "createIfNotExists": false,
       "connection": "wrdsb-codex_DOCUMENTDB",
       "direction": "out"

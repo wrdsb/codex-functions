@@ -1,8 +1,8 @@
 {
   "bindings": [
     {
-      "type": "serviceBusTrigger",
       "name": "message",
+      "type": "serviceBusTrigger",
       "topicName": "people_inbound",
       "subscriptionName": "codex-functions",
       "connection": "AzureWebJobsServiceBus",
@@ -10,13 +10,13 @@
       "direction": "in"
     },
     {
+      "name": "oldPerson",
       "type": "documentDB",
-      "name": "document",
       "databaseName": "codex",
       "collectionName": "people",
-      "createIfNotExists": false,
       "connection": "wrdsb-codex_DOCUMENTDB",
-      "direction": "out"
+      "direction": "in",
+      "id": "{id}"
     }
   ]
 }

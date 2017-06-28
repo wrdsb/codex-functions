@@ -139,8 +139,7 @@ module.exports = function (context, message) {
     // write the merged record
     context.log(mergedRecord);
 
-    // context.bindings.document = context.bindings.message;
-    // context.bindings.personRecordOut = context.bindings.personRecordIn;
+    context.bindings.outputRecord = JSON.stringify(mergedRecord);
 
     context.done();
 };

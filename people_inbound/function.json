@@ -17,6 +17,14 @@
       "connection": "wrdsb-codex_DOCUMENTDB",
       "direction": "in",
       "id": "{id}"
+    },
+    {
+      "name": "outputRecord",
+      "type": "documentDB",
+      "databaseName": "codex",
+      "collectionName": "people",
+      "connection": "wrdsb-codex_DOCUMENTDB",
+      "direction": "out"
     }
   ]
 }

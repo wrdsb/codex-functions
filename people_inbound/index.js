@@ -7,6 +7,7 @@ module.exports = function (context, message) {
     // if we have an old record for this EIN, yank it out of 'message'
     if (message.oldRecord) {
         var oldRecord = message.oldRecord;
+        context.log(oldRecord);
         delete message.oldRecord;
     }
 
@@ -128,6 +129,7 @@ module.exports = function (context, message) {
 
         // if we didn't find an assignment to modify, append our new assignment to the assignments array        
         if (!was_assignment_modified) {
+            newAssignment.last_modified = new Date();
             mergedRecord.assignments.push(newAssignment);
         }
 
@@ -137,8 +139,6 @@ module.exports = function (context, message) {
     }
 
     // write the merged record
-    context.log(mergedRecord);
-
     context.bindings.outputRecord = JSON.stringify(mergedRecord);
 
     context.done();

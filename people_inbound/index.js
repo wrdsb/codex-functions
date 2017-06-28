@@ -14,7 +14,7 @@ module.exports = function (context, message) {
     var newRecord = message;
 
     // variable to hold assignment from message
-    var newAssignment;
+    var newAssignment = {};
 
     // add fields to new assignment, and delete them from new record main body
     newAssignment.ipps_activity_code              = newRecord.ipps_activity_code;
@@ -47,6 +47,7 @@ module.exports = function (context, message) {
     delete newRecord.ipps_school_type;
     delete newRecord.ipps_home_location_indicator;
 
+    // TODO: This will need to be a comparison when we move to a conditional write
     if (newAssignment.ipps_home_location_indicator === 'Y') {newRecord.ipps_home_location = newAssignment.ipps_location_code;}
     
     /* We now have:

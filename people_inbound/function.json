@@ -10,7 +10,7 @@
       "direction": "in"
     },
     {
-      "name": "oldPerson",
+      "name": "oldRecord",
       "type": "documentDB",
       "databaseName": "codex",
       "collectionName": "people",

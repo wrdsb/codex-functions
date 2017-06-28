@@ -1,13 +1,13 @@
 module.exports = function (context, message) {
-    context.log(context);
+    // context.log(context);
 
     // variable to hold the record we'll write to Codex
     var mergedRecord;
 
     // if we have an old record for this EIN, yank it out of 'message'
-    if (message.oldRecord) {
-        var oldRecord = message.oldRecord;
-        context.log(oldRecord);
+    if (context.bindings.oldRecord) {
+        var oldRecord = context.bindings.oldRecord;
+        // context.log(oldRecord);
         delete message.oldRecord;
     }
 
@@ -122,14 +122,14 @@ module.exports = function (context, message) {
                     assignment.ipps_home_location_indicator    = newAssignment.ipps_home_location_indicator;
                     assignment.ipps_activity_code              = newAssignment.ipps_activity_code;
 
-                    assignment.last_modified = new Date();
+                    assignment.last_modified = Date.now();
                     was_assignment_modified = true;
             }
         });
 
         // if we didn't find an assignment to modify, append our new assignment to the assignments array        
         if (!was_assignment_modified) {
-            newAssignment.last_modified = new Date();
+            newAssignment.last_modified = Date.now();
             mergedRecord.assignments.push(newAssignment);
         }
 

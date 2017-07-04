@@ -13,7 +13,7 @@
       "name": "existingRecord",
       "type": "documentDB",
       "databaseName": "codex",
-      "collectionName": "people_temp",
+      "collectionName": "people",
       "connection": "wrdsb-codex_DOCUMENTDB",
       "direction": "in",
       "id": "{id}"
@@ -22,7 +22,7 @@
       "name": "updatedRecord",
       "type": "documentDB",
       "databaseName": "codex",
-      "collectionName": "people_temp",
+      "collectionName": "people",
       "connection": "wrdsb-codex_DOCUMENTDB",
       "direction": "out"
     }

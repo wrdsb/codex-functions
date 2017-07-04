@@ -1,5 +1,5 @@
 module.exports = function (context, message) {
-    context.log(context);
+    // context.log(context);
 
     // for some reason, input bindings also appear in the message
     // let's remove it just in case things get weird
@@ -51,9 +51,9 @@ module.exports = function (context, message) {
      *   An incoming assignment, which was pulled out of the new record
      *   A temp record for the same person, if one was present in people_temp, via our input binding
      */
-    context.log(incomingRecord);
-    context.log(incomingAssignment);
-    context.log(context.bindings.existingRecord);
+    // context.log(incomingRecord);
+    // context.log(incomingAssignment);
+    // context.log(context.bindings.existingRecord);
 
     // if we already have a temp record
     if (context.bindings.existingRecord) {
@@ -115,13 +115,15 @@ module.exports = function (context, message) {
         if (!was_assignment_modified) {
             context.bindings.updatedRecord.assignments.push(incomingAssignment);
         }
-        context.log(context.bindings.updatedRecord);
+        // context.log(context.bindings.updatedRecord);
+        context.log('Writing record for ID ' + context.bindings.updatedRecord.id);
         context.done();
 
     } else {
         var newRecord = incomingRecord;
         newRecord.assignments = [incomingAssignment];
         context.bindings.updatedRecord = newRecord;
+        context.log('Writing record for ID ' + context.bindings.updatedRecord.id);
         context.done();
     }
 };

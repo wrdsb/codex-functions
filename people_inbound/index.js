@@ -1,11 +1,9 @@
 module.exports = function (context, message) {
     context.log(context);
 
-    // if we already have a temp record for this EIN,
-    // assign it to tempRecord, and remove it from 'message'
+    // for some reason, input bindings also appear in the message
+    // let's remove it just in case things get weird
     if (context.bindings.tempRecord) {
-        var tempRecord = context.bindings.tempRecord;
-        // context.log(tempRecord);
         delete message.tempRecord;
     }
 
@@ -51,14 +49,15 @@ module.exports = function (context, message) {
     /* We now have:
      *   An incoming record, which came in via our service bus
      *   An incoming assignment, which was pulled out of the new record
-     *   An temp record for the same person, if one was present in people_temp
+     *   A temp record for the same person, if one was present in people_temp, via our input binding
      */
 
 
     // if we already have a temp record, then overwrite values as needed
-    if (tempRecord) {
+    if (context.bindings.tempRecord) {
 
-        context.bindings.tempRecordOut = context.bindings.tempRecordIn;
+        // map the "in" tempRecord to the "out" tempRecord which will be written on context.done();
+        context.bindings.tempRecordOut = context.bindings.tempRecord;
 
         // update username
         context.bindings.tempRecordOut.username = incomingRecord.username;
@@ -114,12 +113,12 @@ module.exports = function (context, message) {
         if (!was_assignment_modified) {
             context.bindings.tempRecordOut.assignments.push(incomingAssignment);
         }
+        context.done();
 
     } else {
         var newRecord = incomingRecord;
         newRecord.assignments = [incomingAssignment];
         context.bindings.newRecord = JSON.stringify(newRecord);
+        context.done();
     }
-
-    context.done();
 };

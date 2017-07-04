@@ -1,5 +1,5 @@
 module.exports = function (context, message) {
-    context.log(context);
+    // context.log(context);
 
     // for some reason, input bindings also appear in the message
     // let's remove it just in case things get weird
@@ -113,6 +113,7 @@ module.exports = function (context, message) {
         if (!was_assignment_modified) {
             context.bindings.tempRecordOut.assignments.push(incomingAssignment);
         }
+        context.log(context.bindings.tempRecordOut);
         context.done();
 
     } else {

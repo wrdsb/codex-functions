@@ -55,39 +55,39 @@ module.exports = function (context, message) {
     context.log(incomingAssignment);
     context.log(context.bindings.existingRecord);
 
-    // if we already have a temp record, then overwrite values as needed
+    // if we already have a temp record
     if (context.bindings.existingRecord) {
 
-        // map the "in" existingRecord to the "out" existingRecord which will be written on context.done();
-        context.bindings.existingRecordOut = context.bindings.existingRecord;
+        // map the "in" existingRecord to the "out" updatedRecord which will be written on context.done();
+        context.bindings.updatedRecord = context.bindings.existingRecord;
 
         // update username
-        context.bindings.existingRecordOut.username = incomingRecord.username;
+        context.bindings.updatedRecord.username = incomingRecord.username;
 
         // update email
-        context.bindings.existingRecordOut.email = incomingRecord.email;
+        context.bindings.updatedRecord.email = incomingRecord.email;
 
         // update name
-        context.bindings.existingRecordOut.name = incomingRecord.name;
+        context.bindings.updatedRecord.name = incomingRecord.name;
 
         // update sortable name
-        context.bindings.existingRecordOut.sortable_name = incomingRecord.sortable_name;
+        context.bindings.updatedRecord.sortable_name = incomingRecord.sortable_name;
 
         // update first_name
-        context.bindings.existingRecordOut.first_name = incomingRecord.first_name;
+        context.bindings.updatedRecord.first_name = incomingRecord.first_name;
 
         // update last_name
-        context.bindings.existingRecordOut.last_name = incomingRecord.last_name;
+        context.bindings.updatedRecord.last_name = incomingRecord.last_name;
 
         // update ipps_home_location
         if (incomingRecord.ipps_home_location) {
-            context.bindings.existingRecordOut.ipps_home_location = incomingRecord.ipps_home_location;
+            context.bindings.updatedRecord.ipps_home_location = incomingRecord.ipps_home_location;
         }
 
         //  compare new assigment with those already on file
         var was_assignment_modified = false;
 
-        context.bindings.existingRecordOut.assignments.forEach( function (assignment) {
+        context.bindings.updatedRecord.assignments.forEach( function (assignment) {
             if (assignment.ipps_job_code            == incomingAssignment.ipps_job_code &&
                 assignment.ipps_location_code       == incomingAssignment.ipps_location_code &&
                 assignment.ipps_employee_group_code == incomingAssignment.ipps_employee_group_code
@@ -113,15 +113,15 @@ module.exports = function (context, message) {
 
         // if we didn't find an assignment to modify, append our new assignment to the assignments array        
         if (!was_assignment_modified) {
-            context.bindings.existingRecordOut.assignments.push(incomingAssignment);
+            context.bindings.updatedRecord.assignments.push(incomingAssignment);
         }
-        context.log(context.bindings.existingRecordOut);
+        context.log(context.bindings.updatedRecord);
         context.done();
 
     } else {
         var newRecord = incomingRecord;
         newRecord.assignments = [incomingAssignment];
-        context.bindings.existingRecordOut = newRecord;
+        context.bindings.updatedRecord = newRecord;
         context.done();
     }
 };

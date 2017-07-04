@@ -19,7 +19,7 @@
       "id": "{id}"
     },
     {
-      "name": "existingRecord",
+      "name": "updatedRecord",
       "type": "documentDB",
       "databaseName": "codex",
       "collectionName": "people_temp",

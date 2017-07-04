@@ -119,7 +119,7 @@ module.exports = function (context, message) {
     } else {
         var newRecord = incomingRecord;
         newRecord.assignments = [incomingAssignment];
-        context.bindings.newRecord = JSON.stringify(newRecord);
+        context.bindings.tempRecordOut = newRecord;
         context.done();
     }
 };

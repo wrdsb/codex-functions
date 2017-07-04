@@ -4,11 +4,12 @@ module.exports = function (context, message) {
     // variable to hold the record we'll write to Codex
     var mergedRecord;
 
-    // if we have an old record for this EIN, yank it out of 'message'
-    if (context.bindings.oldRecord) {
-        var oldRecord = context.bindings.oldRecord;
-        // context.log(oldRecord);
-        delete message.oldRecord;
+    // if we already have a temp record for this EIN,
+    // assign it to tempRecord, and remove it from 'message'
+    if (context.bindings.tempRecord) {
+        var tempRecord = context.bindings.tempRecord;
+        // context.log(tempRecord);
+        delete message.tempRecord;
     }
 
     // assign message to newRecord after removing oldRecord (if present)
@@ -48,56 +49,42 @@ module.exports = function (context, message) {
     delete newRecord.ipps_school_type;
     delete newRecord.ipps_home_location_indicator;
 
-    // TODO: This will need to be a comparison when we move to a conditional write
     if (newAssignment.ipps_home_location_indicator === 'Y') {newRecord.ipps_home_location = newAssignment.ipps_location_code;}
     
     /* We now have:
      *   A new record, which came in via our service bus
      *   A new assignment, which was pulled out of the new record
-     *   An old record for the same person, if one was present in Codex
-     *   An empty record, ready to become the merged record we'll write to Codex
+     *   An temp record for the same person, if one was present in people_temp
+     *   An empty record, ready to become the merged record we'll write to people_temp
      */
 
 
     // if we have an old record, assign it to mergedRecord, then overwrite values as needed
-    if (oldRecord) {
-        mergedRecord = oldRecord;
+    if (tempRecord) {
+        mergedRecord = tempRecord;
 
-        // update username if changed
-        if (mergedRecord.username != newRecord.username) {
-            mergedRecord.username = newRecord.username;
-        }
-        
-        // update email if changed
-        if (mergedRecord.email != newRecord.email) {
-            mergedRecord.email = newRecord.email;
-        }
-        
-        // update name if changed
-        if (mergedRecord.name != newRecord.name) {
-            mergedRecord.name = newRecord.name;
-        }
-        
-        // update sortable name if changed
-        if (mergedRecord.sortable_name != newRecord.sortable_name) {
-            mergedRecord.sortable_name = newRecord.sortable_name;
-        }
-        
-        // update first_name if changed
-        if (mergedRecord.first_name != newRecord.first_name) {
-            mergedRecord.first_name = newRecord.first_name;
-        }
-        
-        // update last_name if changed
-        if (mergedRecord.last_name != newRecord.last_name) {
-            mergedRecord.last_name = newRecord.last_name;
-        }
+        // update username
+        mergedRecord.username = newRecord.username;
 
-        // update ipps_home_location if changed
-        if (mergedRecord.ipps_home_location != newRecord.ipps_home_location) {
+        // update email
+        mergedRecord.email = newRecord.email;
+
+        // update name
+        mergedRecord.name = newRecord.name;
+
+        // update sortable name
+        mergedRecord.sortable_name = newRecord.sortable_name;
+
+        // update first_name
+        mergedRecord.first_name = newRecord.first_name;
+
+        // update last_name
+        mergedRecord.last_name = newRecord.last_name;
+
+        // update ipps_home_location
+        if (newRecord.ipps_home_location) {
             mergedRecord.ipps_home_location = newRecord.ipps_home_location;
         }
-
 
         //  compare new assigment with those already on file
         var was_assignment_modified = false;
@@ -122,24 +109,22 @@ module.exports = function (context, message) {
                     assignment.ipps_home_location_indicator    = newAssignment.ipps_home_location_indicator;
                     assignment.ipps_activity_code              = newAssignment.ipps_activity_code;
 
-                    assignment.last_modified = Date.now();
                     was_assignment_modified = true;
             }
         });
 
         // if we didn't find an assignment to modify, append our new assignment to the assignments array        
         if (!was_assignment_modified) {
-            newAssignment.last_modified = Date.now();
             mergedRecord.assignments.push(newAssignment);
         }
 
     } else {
         mergedRecord = newRecord;
-        mergedRecord.assignments = [newAssignment]; 
+        mergedRecord.assignments = [newAssignment];
     }
 
     // write the merged record
-    context.bindings.outputRecord = JSON.stringify(mergedRecord);
+    context.bindings.tempRecordOut = JSON.stringify(mergedRecord);
 
     context.done();
 };

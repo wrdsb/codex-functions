@@ -3,8 +3,8 @@ module.exports = function (context, message) {
 
     // for some reason, input bindings also appear in the message
     // let's remove it just in case things get weird
-    if (context.bindings.tempRecord) {
-        delete message.tempRecord;
+    if (context.bindings.existingRecord) {
+        delete message.existingRecord;
     }
 
     // assign message to incomingRecord after removing oldRecord (if present)
@@ -53,41 +53,41 @@ module.exports = function (context, message) {
      */
     context.log(incomingRecord);
     context.log(incomingAssignment);
-    context.log(context.bindings.tempRecord);
+    context.log(context.bindings.existingRecord);
 
     // if we already have a temp record, then overwrite values as needed
-    if (context.bindings.tempRecord) {
+    if (context.bindings.existingRecord) {
 
-        // map the "in" tempRecord to the "out" tempRecord which will be written on context.done();
-        context.bindings.tempRecordOut = context.bindings.tempRecord;
+        // map the "in" existingRecord to the "out" existingRecord which will be written on context.done();
+        context.bindings.existingRecordOut = context.bindings.existingRecord;
 
         // update username
-        context.bindings.tempRecordOut.username = incomingRecord.username;
+        context.bindings.existingRecordOut.username = incomingRecord.username;
 
         // update email
-        context.bindings.tempRecordOut.email = incomingRecord.email;
+        context.bindings.existingRecordOut.email = incomingRecord.email;
 
         // update name
-        context.bindings.tempRecordOut.name = incomingRecord.name;
+        context.bindings.existingRecordOut.name = incomingRecord.name;
 
         // update sortable name
-        context.bindings.tempRecordOut.sortable_name = incomingRecord.sortable_name;
+        context.bindings.existingRecordOut.sortable_name = incomingRecord.sortable_name;
 
         // update first_name
-        context.bindings.tempRecordOut.first_name = incomingRecord.first_name;
+        context.bindings.existingRecordOut.first_name = incomingRecord.first_name;
 
         // update last_name
-        context.bindings.tempRecordOut.last_name = incomingRecord.last_name;
+        context.bindings.existingRecordOut.last_name = incomingRecord.last_name;
 
         // update ipps_home_location
         if (incomingRecord.ipps_home_location) {
-            context.bindings.tempRecordOut.ipps_home_location = incomingRecord.ipps_home_location;
+            context.bindings.existingRecordOut.ipps_home_location = incomingRecord.ipps_home_location;
         }
 
         //  compare new assigment with those already on file
         var was_assignment_modified = false;
 
-        context.bindings.tempRecordOut.assignments.forEach( function (assignment) {
+        context.bindings.existingRecordOut.assignments.forEach( function (assignment) {
             if (assignment.ipps_job_code            == incomingAssignment.ipps_job_code &&
                 assignment.ipps_location_code       == incomingAssignment.ipps_location_code &&
                 assignment.ipps_employee_group_code == incomingAssignment.ipps_employee_group_code
@@ -113,15 +113,15 @@ module.exports = function (context, message) {
 
         // if we didn't find an assignment to modify, append our new assignment to the assignments array        
         if (!was_assignment_modified) {
-            context.bindings.tempRecordOut.assignments.push(incomingAssignment);
+            context.bindings.existingRecordOut.assignments.push(incomingAssignment);
         }
-        context.log(context.bindings.tempRecordOut);
+        context.log(context.bindings.existingRecordOut);
         context.done();
 
     } else {
         var newRecord = incomingRecord;
         newRecord.assignments = [incomingAssignment];
-        context.bindings.tempRecordOut = newRecord;
+        context.bindings.existingRecordOut = newRecord;
         context.done();
     }
 };

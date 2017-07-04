@@ -17,6 +17,14 @@
       "connection": "wrdsb-codex_DOCUMENTDB",
       "direction": "in",
       "id": "{id}"
+    },
+    {
+      "name": "newRecord",
+      "type": "documentDB",
+      "databaseName": "codex",
+      "collectionName": "people_temp",
+      "connection": "wrdsb-codex_DOCUMENTDB",
+      "direction": "out"
     }
   ]
 }

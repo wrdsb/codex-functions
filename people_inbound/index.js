@@ -1,8 +1,5 @@
 module.exports = function (context, message) {
-    // context.log(context);
-
-    // variable to hold the record we'll write to Codex
-    var mergedRecord;
+    context.log(context);
 
     // if we already have a temp record for this EIN,
     // assign it to tempRecord, and remove it from 'message'
@@ -12,102 +9,102 @@ module.exports = function (context, message) {
         delete message.tempRecord;
     }
 
-    // assign message to newRecord after removing oldRecord (if present)
-    var newRecord = message;
+    // assign message to incomingRecord after removing oldRecord (if present)
+    var incomingRecord = message;
 
     // variable to hold assignment from message
-    var newAssignment = {};
+    var incomingAssignment = {};
 
     // add fields to new assignment, and delete them from new record main body
-    newAssignment.ipps_activity_code              = newRecord.ipps_activity_code;
-    newAssignment.ipps_employee_group_category    = newRecord.ipps_employee_group_category;
-    newAssignment.ipps_employee_group_code        = newRecord.ipps_employee_group_code;
-    newAssignment.ipps_employee_group_description = newRecord.ipps_employee_group_description;
-    newAssignment.ipps_extension                  = newRecord.ipps_extension;
-    newAssignment.ipps_job_code                   = newRecord.ipps_job_code;
-    newAssignment.ipps_job_description            = newRecord.ipps_job_description;
-    newAssignment.ipps_location_code              = newRecord.ipps_location_code;
-    newAssignment.ipps_location_description       = newRecord.ipps_location_description;
-    newAssignment.ipps_panel                      = newRecord.ipps_panel;
-    newAssignment.ipps_phone_no                   = newRecord.ipps_phone_no;
-    newAssignment.ipps_school_code                = newRecord.ipps_school_code;
-    newAssignment.ipps_school_type                = newRecord.ipps_school_type;
-    newAssignment.ipps_home_location_indicator    = newRecord.ipps_home_location_indicator;
+    incomingAssignment.ipps_activity_code              = incomingRecord.ipps_activity_code;
+    incomingAssignment.ipps_employee_group_category    = incomingRecord.ipps_employee_group_category;
+    incomingAssignment.ipps_employee_group_code        = incomingRecord.ipps_employee_group_code;
+    incomingAssignment.ipps_employee_group_description = incomingRecord.ipps_employee_group_description;
+    incomingAssignment.ipps_extension                  = incomingRecord.ipps_extension;
+    incomingAssignment.ipps_job_code                   = incomingRecord.ipps_job_code;
+    incomingAssignment.ipps_job_description            = incomingRecord.ipps_job_description;
+    incomingAssignment.ipps_location_code              = incomingRecord.ipps_location_code;
+    incomingAssignment.ipps_location_description       = incomingRecord.ipps_location_description;
+    incomingAssignment.ipps_panel                      = incomingRecord.ipps_panel;
+    incomingAssignment.ipps_phone_no                   = incomingRecord.ipps_phone_no;
+    incomingAssignment.ipps_school_code                = incomingRecord.ipps_school_code;
+    incomingAssignment.ipps_school_type                = incomingRecord.ipps_school_type;
+    incomingAssignment.ipps_home_location_indicator    = incomingRecord.ipps_home_location_indicator;
 
-    delete newRecord.ipps_activity_code;
-    delete newRecord.ipps_employee_group_category;
-    delete newRecord.ipps_employee_group_code;
-    delete newRecord.ipps_employee_group_description;
-    delete newRecord.ipps_extension;
-    delete newRecord.ipps_job_code;
-    delete newRecord.ipps_job_description;
-    delete newRecord.ipps_location_code;
-    delete newRecord.ipps_location_description;
-    delete newRecord.ipps_panel;
-    delete newRecord.ipps_phone_no;
-    delete newRecord.ipps_school_code;
-    delete newRecord.ipps_school_type;
-    delete newRecord.ipps_home_location_indicator;
+    delete incomingRecord.ipps_activity_code;
+    delete incomingRecord.ipps_employee_group_category;
+    delete incomingRecord.ipps_employee_group_code;
+    delete incomingRecord.ipps_employee_group_description;
+    delete incomingRecord.ipps_extension;
+    delete incomingRecord.ipps_job_code;
+    delete incomingRecord.ipps_job_description;
+    delete incomingRecord.ipps_location_code;
+    delete incomingRecord.ipps_location_description;
+    delete incomingRecord.ipps_panel;
+    delete incomingRecord.ipps_phone_no;
+    delete incomingRecord.ipps_school_code;
+    delete incomingRecord.ipps_school_type;
+    delete incomingRecord.ipps_home_location_indicator;
 
-    if (newAssignment.ipps_home_location_indicator === 'Y') {newRecord.ipps_home_location = newAssignment.ipps_location_code;}
+    if (incomingAssignment.ipps_home_location_indicator === 'Y') {incomingRecord.ipps_home_location = incomingAssignment.ipps_location_code;}
     
     /* We now have:
-     *   A new record, which came in via our service bus
-     *   A new assignment, which was pulled out of the new record
+     *   An incoming record, which came in via our service bus
+     *   An incoming assignment, which was pulled out of the new record
      *   An temp record for the same person, if one was present in people_temp
-     *   An empty record, ready to become the merged record we'll write to people_temp
      */
 
 
-    // if we have an old record, assign it to mergedRecord, then overwrite values as needed
+    // if we already have a temp record, then overwrite values as needed
     if (tempRecord) {
-        mergedRecord = tempRecord;
+
+        context.bindings.tempRecordOut = context.bindings.tempRecordIn;
 
         // update username
-        mergedRecord.username = newRecord.username;
+        context.bindings.tempRecordOut.username = incomingRecord.username;
 
         // update email
-        mergedRecord.email = newRecord.email;
+        context.bindings.tempRecordOut.email = incomingRecord.email;
 
         // update name
-        mergedRecord.name = newRecord.name;
+        context.bindings.tempRecordOut.name = incomingRecord.name;
 
         // update sortable name
-        mergedRecord.sortable_name = newRecord.sortable_name;
+        context.bindings.tempRecordOut.sortable_name = incomingRecord.sortable_name;
 
         // update first_name
-        mergedRecord.first_name = newRecord.first_name;
+        context.bindings.tempRecordOut.first_name = incomingRecord.first_name;
 
         // update last_name
-        mergedRecord.last_name = newRecord.last_name;
+        context.bindings.tempRecordOut.last_name = incomingRecord.last_name;
 
         // update ipps_home_location
-        if (newRecord.ipps_home_location) {
-            mergedRecord.ipps_home_location = newRecord.ipps_home_location;
+        if (incomingRecord.ipps_home_location) {
+            context.bindings.tempRecordOut.ipps_home_location = incomingRecord.ipps_home_location;
         }
 
         //  compare new assigment with those already on file
         var was_assignment_modified = false;
 
-        mergedRecord.assignments.forEach( function (assignment) {
-            if (assignment.ipps_job_code            == newAssignment.ipps_job_code &&
-                assignment.ipps_location_code       == newAssignment.ipps_location_code &&
-                assignment.ipps_employee_group_code == newAssignment.ipps_employee_group_code
+        context.bindings.tempRecordOut.assignments.forEach( function (assignment) {
+            if (assignment.ipps_job_code            == incomingAssignment.ipps_job_code &&
+                assignment.ipps_location_code       == incomingAssignment.ipps_location_code &&
+                assignment.ipps_employee_group_code == incomingAssignment.ipps_employee_group_code
                 ) {
-                    assignment.ipps_job_code                   = newAssignment.ipps_job_code;
-                    assignment.ipps_job_description            = newAssignment.ipps_job_description;
-                    assignment.ipps_location_code              = newAssignment.ipps_location_code;
-                    assignment.ipps_location_description       = newAssignment.ipps_location_description;
-                    assignment.ipps_employee_group_code        = newAssignment.ipps_employee_group_code;
-                    assignment.ipps_employee_group_category    = newAssignment.ipps_employee_group_category;
-                    assignment.ipps_employee_group_description = newAssignment.ipps_employee_group_description;
-                    assignment.ipps_school_code                = newAssignment.ipps_school_code;
-                    assignment.ipps_school_type                = newAssignment.ipps_school_type;
-                    assignment.ipps_panel                      = newAssignment.ipps_panel;
-                    assignment.ipps_phone_no                   = newAssignment.ipps_phone_no;
-                    assignment.ipps_extension                  = newAssignment.ipps_extension;
-                    assignment.ipps_home_location_indicator    = newAssignment.ipps_home_location_indicator;
-                    assignment.ipps_activity_code              = newAssignment.ipps_activity_code;
+                    assignment.ipps_job_code                   = incomingAssignment.ipps_job_code;
+                    assignment.ipps_job_description            = incomingAssignment.ipps_job_description;
+                    assignment.ipps_location_code              = incomingAssignment.ipps_location_code;
+                    assignment.ipps_location_description       = incomingAssignment.ipps_location_description;
+                    assignment.ipps_employee_group_code        = incomingAssignment.ipps_employee_group_code;
+                    assignment.ipps_employee_group_category    = incomingAssignment.ipps_employee_group_category;
+                    assignment.ipps_employee_group_description = incomingAssignment.ipps_employee_group_description;
+                    assignment.ipps_school_code                = incomingAssignment.ipps_school_code;
+                    assignment.ipps_school_type                = incomingAssignment.ipps_school_type;
+                    assignment.ipps_panel                      = incomingAssignment.ipps_panel;
+                    assignment.ipps_phone_no                   = incomingAssignment.ipps_phone_no;
+                    assignment.ipps_extension                  = incomingAssignment.ipps_extension;
+                    assignment.ipps_home_location_indicator    = incomingAssignment.ipps_home_location_indicator;
+                    assignment.ipps_activity_code              = incomingAssignment.ipps_activity_code;
 
                     was_assignment_modified = true;
             }
@@ -115,16 +112,14 @@ module.exports = function (context, message) {
 
         // if we didn't find an assignment to modify, append our new assignment to the assignments array        
         if (!was_assignment_modified) {
-            mergedRecord.assignments.push(newAssignment);
+            context.bindings.tempRecordOut.assignments.push(incomingAssignment);
         }
 
     } else {
-        mergedRecord = newRecord;
-        mergedRecord.assignments = [newAssignment];
+        var newRecord = incomingRecord;
+        newRecord.assignments = [incomingAssignment];
+        context.bindings.newRecord = JSON.stringify(newRecord);
     }
-
-    // write the merged record
-    context.bindings.tempRecordOut = JSON.stringify(mergedRecord);
 
     context.done();
 };

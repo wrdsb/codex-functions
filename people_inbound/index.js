@@ -10,6 +10,9 @@ module.exports = function (context, message) {
     // assign message to incomingRecord after removing existingRecord (if present)
     var incomingRecord = message;
 
+    // did we get a change worth noting?
+    var person_changed = false;
+
     // keep a tally of changes we find
     var people_changes = [];
 
@@ -36,6 +39,7 @@ module.exports = function (context, message) {
                     to: incomingRecord.username
                 }
             });
+            person_changed = true;
         }
 
         // update email
@@ -47,6 +51,7 @@ module.exports = function (context, message) {
                     to: incomingRecord.email
                 }
             });
+            person_changed = true;
         }
 
         // update name
@@ -58,6 +63,7 @@ module.exports = function (context, message) {
                     to: incomingRecord.name
                 }
             });
+            person_changed = true;
         }
 
         // update sortable name
@@ -69,6 +75,7 @@ module.exports = function (context, message) {
                     to: incomingRecord.sortable_name
                 }
             });
+            person_changed = true;
         }
 
         // update first_name
@@ -80,6 +87,7 @@ module.exports = function (context, message) {
                     to: incomingRecord.first_name
                 }
             });
+            person_changed = true;
         }
 
         // update last_name
@@ -91,6 +99,7 @@ module.exports = function (context, message) {
                     to: incomingRecord.last_name
                 }
             });
+            person_changed = true;
         }
 
         // update ipps_home_location
@@ -102,6 +111,7 @@ module.exports = function (context, message) {
                     to: incomingRecord.ipps_home_location
                 }
             });
+            person_changed = true;
         }
 
         // remove old fields we no longer use
@@ -165,15 +175,19 @@ module.exports = function (context, message) {
         // });
 
         context.log('Writing updated record for ID ' + context.bindings.updatedRecord.id);
-        people_changes = {id: incomingRecord.id, update: people_changes};
-        context.bindings.peopleChangesTopic = people_changes;
+        if (person_changed) {
+            people_changes = {id: incomingRecord.id, update: people_changes};
+            context.bindings.peopleChangesTopic = people_changes;
+        }
         context.done();
 
     } else {
         context.bindings.updatedRecord = incomingRecord;
         context.log('Writing new record for ID ' + context.bindings.updatedRecord.id);
-        people_changes = {id: incomingRecord.id, create: incomingRecord};
-        context.bindings.peopleChangesTopic = people_changes;
+        if (person_changed) {
+            people_changes = {id: incomingRecord.id, create: incomingRecord};
+            context.bindings.peopleChangesTopic = people_changes;
+        }
         context.done();
     }
 };

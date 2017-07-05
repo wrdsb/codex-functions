@@ -27,7 +27,7 @@
       "direction": "out"
     },
     {
-      "name" : "people_changes_topic",
+      "name" : "peopleChangesTopic",
       "type" : "serviceBus",
       "topicName" : "people_changes",
       "subscriptionName" : "codex-functions",

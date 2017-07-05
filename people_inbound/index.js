@@ -166,14 +166,14 @@ module.exports = function (context, message) {
 
         context.log('Writing updated record for ID ' + context.bindings.updatedRecord.id);
         people_changes = {id: incomingRecord.id, update: people_changes};
-        context.bindings.people_changes_topic = people_changes;
+        context.bindings.peopleChangesTopic = people_changes;
         context.done();
 
     } else {
         context.bindings.updatedRecord = incomingRecord;
         context.log('Writing new record for ID ' + context.bindings.updatedRecord.id);
         people_changes = {id: incomingRecord.id, create: incomingRecord};
-        context.bindings.people_changes_topic = people_changes;
+        context.bindings.peopleChangesTopic = people_changes;
         context.done();
     }
 };

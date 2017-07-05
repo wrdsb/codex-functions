@@ -171,8 +171,9 @@ module.exports = function (context, message) {
 
     } else {
         context.bindings.updatedRecord = incomingRecord;
-        people_changes = {id: incomingRecord.id, create: incomingRecord};
         context.log('Writing new record for ID ' + context.bindings.updatedRecord.id);
+        people_changes = {id: incomingRecord.id, create: incomingRecord};
+        context.bindings.people_changes_topic = people_changes;
         context.done();
     }
 };

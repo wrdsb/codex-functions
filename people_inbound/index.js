@@ -10,9 +10,13 @@ module.exports = function (context, message) {
     // assign message to incomingRecord after removing existingRecord (if present)
     var incomingRecord = message;
 
+    // keep a tally of changes we find
+    var people_changes = [];
+
     /* We now have:
      *   An incoming record, which came in via our service bus
      *   A temp record for the same person, if one was present in people_temp, via our input binding
+     *   An array to hold a record of any changes we make
      */
     // context.log(incomingRecord);
     // context.log(context.bindings.existingRecord);
@@ -24,25 +28,81 @@ module.exports = function (context, message) {
         context.bindings.updatedRecord = context.bindings.existingRecord;
 
         // update username
-        context.bindings.updatedRecord.username = incomingRecord.username;
+        if (context.bindings.updatedRecord.username != incomingRecord.username) {
+            context.bindings.updatedRecord.username = incomingRecord.username;
+            people_changes.push({
+                username: {
+                    from: context.bindings.updatedRecord.username,
+                    to: incomingRecord.username
+                }
+            });
+        }
 
         // update email
-        context.bindings.updatedRecord.email = incomingRecord.email;
+        if (context.bindings.updatedRecord.email != incomingRecord.email) {
+            context.bindings.updatedRecord.email = incomingRecord.email;
+            people_changes.push({
+                email: {
+                    from: context.bindings.updatedRecord.email,
+                    to: incomingRecord.email
+                }
+            });
+        }
 
         // update name
-        context.bindings.updatedRecord.name = incomingRecord.name;
+        if (context.bindings.updatedRecord.name != incomingRecord.name) {
+            context.bindings.updatedRecord.name = incomingRecord.name;
+            people_changes.push({
+                name: {
+                    from: context.bindings.updatedRecord.name,
+                    to: incomingRecord.name
+                }
+            });
+        }
 
         // update sortable name
-        context.bindings.updatedRecord.sortable_name = incomingRecord.sortable_name;
+        if (context.bindings.updatedRecord.sortable_name != incomingRecord.sortable_name) {
+            context.bindings.updatedRecord.sortable_name = incomingRecord.sortable_name;
+            people_changes.push({
+                sortable_name: {
+                    from: context.bindings.updatedRecord.sortable_name,
+                    to: incomingRecord.sortable_name
+                }
+            });
+        }
 
         // update first_name
-        context.bindings.updatedRecord.first_name = incomingRecord.first_name;
+        if (context.bindings.updatedRecord.first_name != incomingRecord.first_name) {
+            context.bindings.updatedRecord.first_name = incomingRecord.first_name;
+            people_changes.push({
+                first_name: {
+                    from: context.bindings.updatedRecord.first_name,
+                    to: incomingRecord.first_name
+                }
+            });
+        }
 
         // update last_name
-        context.bindings.updatedRecord.last_name = incomingRecord.last_name;
+        if (context.bindings.updatedRecord.last_name != incomingRecord.last_name) {
+            context.bindings.updatedRecord.last_name = incomingRecord.last_name;
+            people_changes.push({
+                last_name: {
+                    from: context.bindings.updatedRecord.last_name,
+                    to: incomingRecord.last_name
+                }
+            });
+        }
 
         // update ipps_home_location
-        context.bindings.updatedRecord.ipps_home_location = incomingRecord.ipps_home_location;
+        if (context.bindings.updatedRecord.ipps_home_location != incomingRecord.ipps_home_location) {
+            context.bindings.updatedRecord.ipps_home_location = incomingRecord.ipps_home_location;
+            people_changes.push({
+                ipps_home_location: {
+                    from: context.bindings.updatedRecord.ipps_home_location,
+                    to: incomingRecord.ipps_home_location
+                }
+            });
+        }
 
         // remove old fields we no longer use
         delete context.bindings.updatedRecord.ipps_ein;
@@ -105,10 +165,13 @@ module.exports = function (context, message) {
         // });
 
         context.log('Writing updated record for ID ' + context.bindings.updatedRecord.id);
+        people_changes = {id: incomingRecord.id, update: people_changes};
+        context.bindings.people_changes_topic = people_changes;
         context.done();
 
     } else {
         context.bindings.updatedRecord = incomingRecord;
+        people_changes = {id: incomingRecord.id, create: incomingRecord};
         context.log('Writing new record for ID ' + context.bindings.updatedRecord.id);
         context.done();
     }

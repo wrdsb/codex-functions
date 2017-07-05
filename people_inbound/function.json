@@ -25,6 +25,15 @@
       "collectionName": "people",
       "connection": "wrdsb-codex_DOCUMENTDB",
       "direction": "out"
+    },
+    {
+      "name" : "people_changes_topic",
+      "type" : "serviceBus",
+      "topicName" : "people_changes",
+      "subscriptionName" : "codex-functions",
+      "connection" : "AzureWebJobsServiceBus",
+      "accessRights" : "manage",
+      "direction" : "out"
     }
   ]
 }

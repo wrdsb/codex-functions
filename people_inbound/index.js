@@ -32,85 +32,85 @@ module.exports = function (context, message) {
 
         // update username
         if (context.bindings.updatedRecord.username != incomingRecord.username) {
-            context.bindings.updatedRecord.username = incomingRecord.username;
             people_changes.push({
                 username: {
-                    from: context.bindings.existingRecord.username,
+                    from: context.bindings.updatedRecord.username,
                     to: incomingRecord.username
                 }
             });
+            context.bindings.updatedRecord.username = incomingRecord.username;
             person_changed = true;
         }
 
         // update email
         if (context.bindings.updatedRecord.email != incomingRecord.email) {
-            context.bindings.updatedRecord.email = incomingRecord.email;
             people_changes.push({
                 email: {
-                    from: context.bindings.existingRecord.email,
+                    from: context.bindings.updatedRecord.email,
                     to: incomingRecord.email
                 }
             });
+            context.bindings.updatedRecord.email = incomingRecord.email;
             person_changed = true;
         }
 
         // update name
         if (context.bindings.updatedRecord.name != incomingRecord.name) {
-            context.bindings.updatedRecord.name = incomingRecord.name;
             people_changes.push({
                 name: {
-                    from: context.bindings.existingRecord.name,
+                    from: context.bindings.updatedRecord.name,
                     to: incomingRecord.name
                 }
             });
+            context.bindings.updatedRecord.name = incomingRecord.name;
             person_changed = true;
         }
 
         // update sortable name
         if (context.bindings.updatedRecord.sortable_name != incomingRecord.sortable_name) {
-            context.bindings.updatedRecord.sortable_name = incomingRecord.sortable_name;
             people_changes.push({
                 sortable_name: {
-                    from: context.bindings.existingRecord.sortable_name,
+                    from: context.bindings.updatedRecord.sortable_name,
                     to: incomingRecord.sortable_name
                 }
             });
+            context.bindings.updatedRecord.sortable_name = incomingRecord.sortable_name;
             person_changed = true;
         }
 
         // update first_name
         if (context.bindings.updatedRecord.first_name != incomingRecord.first_name) {
-            context.bindings.updatedRecord.first_name = incomingRecord.first_name;
             people_changes.push({
                 first_name: {
-                    from: context.bindings.existingRecord.first_name,
+                    from: context.bindings.updatedRecord.first_name,
                     to: incomingRecord.first_name
                 }
             });
+            context.bindings.updatedRecord.first_name = incomingRecord.first_name;
             person_changed = true;
         }
 
         // update last_name
         if (context.bindings.updatedRecord.last_name != incomingRecord.last_name) {
-            context.bindings.updatedRecord.last_name = incomingRecord.last_name;
             people_changes.push({
                 last_name: {
-                    from: context.bindings.existingRecord.last_name,
+                    from: context.bindings.updatedRecord.last_name,
                     to: incomingRecord.last_name
                 }
             });
+            context.bindings.updatedRecord.last_name = incomingRecord.last_name;
             person_changed = true;
         }
 
         // update ipps_home_location
         if (context.bindings.updatedRecord.ipps_home_location != incomingRecord.ipps_home_location) {
-            context.bindings.updatedRecord.ipps_home_location = incomingRecord.ipps_home_location;
             people_changes.push({
                 ipps_home_location: {
-                    from: context.bindings.existingRecord.ipps_home_location,
+                    from: context.bindings.updatedRecord.ipps_home_location,
                     to: incomingRecord.ipps_home_location
                 }
             });
+            context.bindings.updatedRecord.ipps_home_location = incomingRecord.ipps_home_location;
             person_changed = true;
         }
 

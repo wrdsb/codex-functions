@@ -1,7 +1,7 @@
 module.exports = function (context, message) {
     context.log(context);
 
-    var mail = {
+    var outboundMail = {
         "personalizations": [ { "to": [ { "email": "james_schumann@googleapps.wrdsb.ca" } ] } ],
         from: "codex@wrdsb.ca",
         subject: "Codex person change",
@@ -11,5 +11,5 @@ module.exports = function (context, message) {
         }]
     };
 
-    context.done(null, mail);
+    context.done(null, outboundMail);
 };

@@ -10,7 +10,7 @@
       "direction": "in"
     },
     {
-      "name": "mail",
+      "name": "$return",
       "type": "sendGrid",
       "direction": "out",
       "apiKey" : "CodexSendGridKey"

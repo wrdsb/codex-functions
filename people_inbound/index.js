@@ -1,5 +1,5 @@
 module.exports = function (context, message) {
-    context.log(context);
+    // context.log(context);
 
     // for some reason, input bindings also appear in the message
     // let's remove it just in case things get weird
@@ -44,6 +44,22 @@ module.exports = function (context, message) {
         // update ipps_home_location
         context.bindings.updatedRecord.ipps_home_location = incomingRecord.ipps_home_location;
 
+        // remove old fields we no longer use
+        delete context.bindings.updatedRecord.ipps_ein;
+        delete context.bindings.updatedRecord.ipps_activity_code;
+        delete context.bindings.updatedRecord.ipps_employee_group_category;
+        delete context.bindings.updatedRecord.ipps_employee_group_code;
+        delete context.bindings.updatedRecord.ipps_employee_group_description;
+        delete context.bindings.updatedRecord.ipps_extension;
+        delete context.bindings.updatedRecord.ipps_job_code;
+        delete context.bindings.updatedRecord.ipps_job_description;
+        delete context.bindings.updatedRecord.ipps_location_code;
+        delete context.bindings.updatedRecord.ipps_location_description;
+        delete context.bindings.updatedRecord.ipps_panel;
+        delete context.bindings.updatedRecord.ipps_phone_no;
+        delete context.bindings.updatedRecord.ipps_school_code;
+        delete context.bindings.updatedRecord.ipps_school_type;
+        
         // update assignments
         context.bindings.updatedRecord.assignments = incomingRecord.assignments;
 

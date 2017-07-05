@@ -1,13 +1,19 @@
 {
   "bindings": [
     {
-      "type": "serviceBusTrigger",
       "name": "message",
+      "type": "serviceBusTrigger",
       "topicName": "people_changes",
       "subscriptionName": "codex-functions",
       "connection": "AzureWebJobsServiceBus",
       "accessRights": "manage",
       "direction": "in"
+    },
+    {
+      "name": "mail",
+      "type": "sendGrid",
+      "direction": "out",
+      "apiKey" : "CodexSendGridKey"
     }
   ]
 }

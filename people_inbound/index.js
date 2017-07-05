@@ -35,7 +35,7 @@ module.exports = function (context, message) {
             context.bindings.updatedRecord.username = incomingRecord.username;
             people_changes.push({
                 username: {
-                    from: context.bindings.updatedRecord.username,
+                    from: context.bindings.existingRecord.username,
                     to: incomingRecord.username
                 }
             });
@@ -47,7 +47,7 @@ module.exports = function (context, message) {
             context.bindings.updatedRecord.email = incomingRecord.email;
             people_changes.push({
                 email: {
-                    from: context.bindings.updatedRecord.email,
+                    from: context.bindings.existingRecord.email,
                     to: incomingRecord.email
                 }
             });
@@ -59,7 +59,7 @@ module.exports = function (context, message) {
             context.bindings.updatedRecord.name = incomingRecord.name;
             people_changes.push({
                 name: {
-                    from: context.bindings.updatedRecord.name,
+                    from: context.bindings.existingRecord.name,
                     to: incomingRecord.name
                 }
             });
@@ -71,7 +71,7 @@ module.exports = function (context, message) {
             context.bindings.updatedRecord.sortable_name = incomingRecord.sortable_name;
             people_changes.push({
                 sortable_name: {
-                    from: context.bindings.updatedRecord.sortable_name,
+                    from: context.bindings.existingRecord.sortable_name,
                     to: incomingRecord.sortable_name
                 }
             });
@@ -83,7 +83,7 @@ module.exports = function (context, message) {
             context.bindings.updatedRecord.first_name = incomingRecord.first_name;
             people_changes.push({
                 first_name: {
-                    from: context.bindings.updatedRecord.first_name,
+                    from: context.bindings.existingRecord.first_name,
                     to: incomingRecord.first_name
                 }
             });
@@ -95,7 +95,7 @@ module.exports = function (context, message) {
             context.bindings.updatedRecord.last_name = incomingRecord.last_name;
             people_changes.push({
                 last_name: {
-                    from: context.bindings.updatedRecord.last_name,
+                    from: context.bindings.existingRecord.last_name,
                     to: incomingRecord.last_name
                 }
             });
@@ -107,7 +107,7 @@ module.exports = function (context, message) {
             context.bindings.updatedRecord.ipps_home_location = incomingRecord.ipps_home_location;
             people_changes.push({
                 ipps_home_location: {
-                    from: context.bindings.updatedRecord.ipps_home_location,
+                    from: context.bindings.existingRecord.ipps_home_location,
                     to: incomingRecord.ipps_home_location
                 }
             });

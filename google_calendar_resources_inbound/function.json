@@ -3,7 +3,7 @@
     {
       "type": "serviceBusTrigger",
       "name": "message",
-      "topicName": "calendars_inbound",
+      "topicName": "google_calendar_resources_inbound",
       "subscriptionName": "codex-functions",
       "connection": "AzureWebJobsServiceBus",
       "accessRights": "manage",
@@ -13,7 +13,7 @@
       "type": "documentDB",
       "name": "document",
       "databaseName": "codex",
-      "collectionName": "calendars",
+      "collectionName": "calendar_resources",
       "createIfNotExists": false,
       "connection": "wrdsb-codex_DOCUMENTDB",
       "direction": "out"

@@ -29,6 +29,7 @@ module.exports = function (context, message) {
 
         // Copy the existingRecord to the updatedRecord which will be written on context.done();
         // At the very least we'll be storing what we already had on file
+        // This will update the Person's timestamp, so we know they're still around
         context.bindings.updatedRecord = context.bindings.existingRecord;
 
         // update username
@@ -131,12 +132,8 @@ module.exports = function (context, message) {
         delete context.bindings.updatedRecord.ipps_school_code;
         delete context.bindings.updatedRecord.ipps_school_type;
         
-        // update assignments - just replace the array of old assignments with the array of new ones
-        context.bindings.updatedRecord.assignments = incomingRecord.assignments;
-
-        // TODO: compare the two assignments arrays,
+        // compare the two assignments arrays,
         // pull out lists of any new ones, any changed ones, and any deleted ones
-
         var newAssignments = incomingRecord.assignments;
         var oldAssignments = context.bindings.existingRecord.assignments;
 
@@ -145,16 +142,17 @@ module.exports = function (context, message) {
         var deletedAssignments = [];
 
         createdAssignments = newAssignments.filter(function(newAssignment) {
-            oldAssignments.some(function(oldAssignment) {
+            var matchFound = oldAssignments.some(function(oldAssignment) {
                 if (oldAssignment.ipps_job_code            != newAssignment.ipps_job_code &&
                     oldAssignment.ipps_location_code       != newAssignment.ipps_location_code &&
                     oldAssignment.ipps_employee_group_code != newAssignment.ipps_employee_group_code
                 ) return true;
             });
+            return matchFound;
         });
 
         updatedAssignments = newAssignments.filter(function(newAssignment) {
-            oldAssignments.some(function(oldAssignment) {
+            var matchFound = oldAssignments.some(function(oldAssignment) {
                 if (oldAssignment.ipps_job_code            == newAssignment.ipps_job_code &&
                     oldAssignment.ipps_location_code       == newAssignment.ipps_location_code &&
                     oldAssignment.ipps_employee_group_code == newAssignment.ipps_employee_group_code &&
@@ -174,15 +172,17 @@ module.exports = function (context, message) {
                     oldAssignment.ipps_activity_code              != newAssignment.ipps_activity_code
                 ) return true;
             });
+            return matchFound;
         });
 
         deletedAssignments = oldAssignments.filter(function(oldAssignment) {
-            newAssignments.some(function(newAssignment) {
+            var matchFound = newAssignments.some(function(newAssignment) {
                 if (newAssignment.ipps_job_code            != oldAssignment.ipps_job_code &&
                     newAssignment.ipps_location_code       != oldAssignment.ipps_location_code &&
                     newAssignment.ipps_employee_group_code != oldAssignment.ipps_employee_group_code
                 ) return true;
             });
+            return matchFound;
         });
 
         if (createdAssignments.length > 0) {
@@ -205,6 +205,9 @@ module.exports = function (context, message) {
                 deleted_assignments: deletedAssignments
             });
         }
+
+        // update assignments - just replace the array of old assignments with the array of new ones
+        context.bindings.updatedRecord.assignments = incomingRecord.assignments;
 
         if (person_changed) {
             context.log('Writing updated record for ID ' + context.bindings.updatedRecord.id);

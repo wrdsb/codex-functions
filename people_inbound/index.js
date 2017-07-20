@@ -137,9 +137,9 @@ module.exports = function (context, message) {
         var newAssignments = incomingRecord.assignments;
         var oldAssignments = context.bindings.existingRecord.assignments;
 
-        context.log('New Assignments:')
+        context.log('New Assignments:');
         context.log(newAssignments);
-        context.log('Old Assignments')
+        context.log('Old Assignments');
         context.log(oldAssignments);
 
         var createdAssignments = [];
@@ -148,17 +148,17 @@ module.exports = function (context, message) {
 
         newAssignments.forEach( function(newAssignment) {
             if (oldAssignments.some( function(oldAssignment) {
-                return oldAssignment.ipps_job_code            != newAssignment.ipps_job_code &&
-                       oldAssignment.ipps_location_code       != newAssignment.ipps_location_code &&
-                       oldAssignment.ipps_employee_group_code != newAssignment.ipps_employee_group_code;
+                    oldAssignment.ipps_job_code            != newAssignment.ipps_job_code &&
+                    oldAssignment.ipps_location_code       != newAssignment.ipps_location_code &&
+                    oldAssignment.ipps_employee_group_code != newAssignment.ipps_employee_group_code;
             })) {
                 createdAssignments.push(newAssignment);
             }
         });
 
-        updatedAssignments = newAssignments.filter(function(newAssignment) {
-            var matchFound = oldAssignments.some(function(oldAssignment) {
-                if (oldAssignment.ipps_job_code            == newAssignment.ipps_job_code &&
+        newAssignments.forEach( function(newAssignment) {
+            if (oldAssignments.some( function(oldAssignment) {
+                    oldAssignment.ipps_job_code            == newAssignment.ipps_job_code &&
                     oldAssignment.ipps_location_code       == newAssignment.ipps_location_code &&
                     oldAssignment.ipps_employee_group_code == newAssignment.ipps_employee_group_code &&
 
@@ -172,20 +172,20 @@ module.exports = function (context, message) {
                     oldAssignment.ipps_phone_no                   != newAssignment.ipps_phone_no ||
                     oldAssignment.ipps_extension                  != newAssignment.ipps_extension ||
                     oldAssignment.ipps_home_location_indicator    != newAssignment.ipps_home_location_indicator ||
-                    oldAssignment.ipps_activity_code              != newAssignment.ipps_activity_code
-                ) return true;
-            });
-            return matchFound;
+                    oldAssignment.ipps_activity_code              != newAssignment.ipps_activity_code;
+            })) {
+                updatedAssignments.push(newAssignment);
+            }
         });
 
-        deletedAssignments = oldAssignments.filter(function(oldAssignment) {
-            var matchFound = newAssignments.some(function(newAssignment) {
-                if (newAssignment.ipps_job_code            != oldAssignment.ipps_job_code &&
+        oldAssignments.forEach( function(oldAssignment) {
+            if (newAssignments.some( function(newAssignment) {
+                    newAssignment.ipps_job_code            != oldAssignment.ipps_job_code &&
                     newAssignment.ipps_location_code       != oldAssignment.ipps_location_code &&
-                    newAssignment.ipps_employee_group_code != oldAssignment.ipps_employee_group_code
-                ) return true;
-            });
-            return matchFound;
+                    newAssignment.ipps_employee_group_code != oldAssignment.ipps_employee_group_code;
+            })) {
+                deletedAssignments.push(oldAssignment);
+            }
         });
 
         if (createdAssignments.length > 0) {

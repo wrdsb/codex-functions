@@ -3,9 +3,7 @@ module.exports = function (context, message) {
 
     // for some reason, input bindings also appear in the message
     // let's remove it just in case things get weird
-    if (context.bindings.existingRecord) {
-        delete message.existingRecord;
-    }
+    delete message.existingRecord;
 
     // assign message to incomingRecord after removing existingRecord (if present)
     var incomingRecord = message;
@@ -17,17 +15,20 @@ module.exports = function (context, message) {
     var people_changes = [];
 
     /* We now have:
-     *   An incoming record, which came in via our service bus
-     *   A temp record for the same person, if one was present in people_temp, via our input binding
-     *   An array to hold a record of any changes we make
+     *   incomingRecord: An incoming record, which came in via 'message' from our service bus trigger
+     *   existingRecord: An existing record for the same person, if one was present in Codex, which came in via our input binding
+     *   person_changed: A boolean to track whether or not there is at least one difference between incomingRecord and existingRecord
+     *   people_changes: An array to hold a record of the precise differences between incomingRecord and existingRecord
+     *   updatedRecord: The record which will be written out to Codex, provided by our output binding
      */
     // context.log(incomingRecord);
     // context.log(context.bindings.existingRecord);
 
-    // if we already have a temp record
+    // if we already have a record for this person in Codex
     if (context.bindings.existingRecord) {
 
-        // map the "in" existingRecord to the "out" updatedRecord which will be written on context.done();
+        // Copy the existingRecord to the updatedRecord which will be written on context.done();
+        // At the very least we'll be storing what we already had on file
         context.bindings.updatedRecord = context.bindings.existingRecord;
 
         // update username
@@ -130,66 +131,99 @@ module.exports = function (context, message) {
         delete context.bindings.updatedRecord.ipps_school_code;
         delete context.bindings.updatedRecord.ipps_school_type;
         
-        // update assignments
+        // update assignments - just replace the array of old assignments with the array of new ones
         context.bindings.updatedRecord.assignments = incomingRecord.assignments;
 
         // TODO: compare the two assignments arrays,
         // pull out lists of any new ones, any changed ones, and any deleted ones
 
-        //  compare new assigment with those already on file
-        // var oldAssignments = updatedRecord.assignments;
-        // var newAssignments = incomingRecord.assignments;
-        // var createdAssignments;
-        // var deletedAssignments;
-        // var updatedAssignments;
+        var newAssignments = incomingRecord.assignments;
+        var oldAssignments = context.bindings.existingRecord.assignments;
 
-        // loop through all new assignments, looking for matches amongst all old assignments
-        // incomingRecord.assignments.forEach( function (incomingAssignment) {
-            // context.bindings.updatedRecord.assignments.forEach( function (oldAssignment) {
+        var createdAssignments = [];
+        var updatedAssignments = [];
+        var deletedAssignments = [];
 
-                // if we find a match, update exiting record and remove assignment from incoming assignments
-                // if (oldAssignment.ipps_job_code            == incomingAssignment.ipps_job_code &&
-                    // oldAssignment.ipps_location_code       == incomingAssignment.ipps_location_code &&
-                    // oldAssignment.ipps_employee_group_code == incomingAssignment.ipps_employee_group_code
-                    // ) {
-                        // oldAssignment.ipps_job_code                   = incomingAssignment.ipps_job_code;
-                        // oldAssignment.ipps_job_description            = incomingAssignment.ipps_job_description;
-                        // oldAssignment.ipps_location_code              = incomingAssignment.ipps_location_code;
-                        // oldAssignment.ipps_location_description       = incomingAssignment.ipps_location_description;
-                        // oldAssignment.ipps_employee_group_code        = incomingAssignment.ipps_employee_group_code;
-                        // oldAssignment.ipps_employee_group_category    = incomingAssignment.ipps_employee_group_category;
-                        // oldAssignment.ipps_employee_group_description = incomingAssignment.ipps_employee_group_description;
-                        // oldAssignment.ipps_school_code                = incomingAssignment.ipps_school_code;
-                        // oldAssignment.ipps_school_type                = incomingAssignment.ipps_school_type;
-                        // oldAssignment.ipps_panel                      = incomingAssignment.ipps_panel;
-                        // oldAssignment.ipps_phone_no                   = incomingAssignment.ipps_phone_no;
-                        // oldAssignment.ipps_extension                  = incomingAssignment.ipps_extension;
-                        // oldAssignment.ipps_home_location_indicator    = incomingAssignment.ipps_home_location_indicator;
-                        // oldAssignment.ipps_activity_code              = incomingAssignment.ipps_activity_code;
+        createdAssignments = newAssignments.filter(function(newAssignment) {
+            oldAssignments.some(function(oldAssignment) {
+                if (oldAssignment.ipps_job_code            != newAssignment.ipps_job_code &&
+                    oldAssignment.ipps_location_code       != newAssignment.ipps_location_code &&
+                    oldAssignment.ipps_employee_group_code != newAssignment.ipps_employee_group_code
+                ) return true;
+            });
+        });
 
-                        // incomingRecord.assignments
-                // } else {
-                    
-                // }
-            // });
-        // });
+        updatedAssignments = newAssignments.filter(function(newAssignment) {
+            oldAssignments.some(function(oldAssignment) {
+                if (oldAssignment.ipps_job_code            == newAssignment.ipps_job_code &&
+                    oldAssignment.ipps_location_code       == newAssignment.ipps_location_code &&
+                    oldAssignment.ipps_employee_group_code == newAssignment.ipps_employee_group_code &&
 
-        context.log('Writing updated record for ID ' + context.bindings.updatedRecord.id);
+                    oldAssignment.ipps_job_description            != newAssignment.ipps_job_description &&
+                    oldAssignment.ipps_location_code              != newAssignment.ipps_location_code &&
+                    oldAssignment.ipps_location_description       != newAssignment.ipps_location_description &&
+                    oldAssignment.ipps_employee_group_code        != newAssignment.ipps_employee_group_code &&
+                    oldAssignment.ipps_employee_group_category    != newAssignment.ipps_employee_group_category &&
+                    oldAssignment.ipps_employee_group_description != newAssignment.ipps_employee_group_description &&
+                    oldAssignment.ipps_school_code                != newAssignment.ipps_school_code &&
+                    oldAssignment.ipps_school_type                != newAssignment.ipps_school_type &&
+                    oldAssignment.ipps_panel                      != newAssignment.ipps_panel &&
+                    oldAssignment.ipps_phone_no                   != newAssignment.ipps_phone_no &&
+                    oldAssignment.ipps_extension                  != newAssignment.ipps_extension &&
+                    oldAssignment.ipps_home_location_indicator    != newAssignment.ipps_home_location_indicator &&
+                    oldAssignment.ipps_activity_code              != newAssignment.ipps_activity_code
+                ) return true;
+            });
+        });
+
+        deletedAssignments = oldAssignments.filter(function(oldAssignment) {
+            newAssignments.some(function(newAssignment) {
+                if (newAssignment.ipps_job_code            != oldAssignment.ipps_job_code &&
+                    newAssignment.ipps_location_code       != oldAssignment.ipps_location_code &&
+                    newAssignment.ipps_employee_group_code != oldAssignment.ipps_employee_group_code
+                ) return true;
+            });
+        });
+
+        if (createdAssignments.length > 0) {
+            person_changed = true;
+            people_changes.push({
+                created_assignments: createdAssignments
+            });
+        }
+
+        if (updatedAssignments.length > 0) {
+            person_changed = true;
+            people_changes.push({
+                updated_assignments: updatedAssignments
+            });
+        }
+
+        if (deletedAssignments.length > 0) {
+            person_changed = true;
+            people_changes.push({
+                deleted_assignments: deletedAssignments
+            });
+        }
+
         if (person_changed) {
+            context.log('Writing updated record for ID ' + context.bindings.updatedRecord.id);
             people_changes = {id: incomingRecord.id, update: people_changes};
             context.log(JSON.stringify(people_changes));
             context.bindings.peopleChangesTopic = JSON.stringify(people_changes);
+        } else {
+            context.log('No changes for ID ' + context.bindings.updatedRecord.id);
         }
         context.done();
 
     } else {
         context.bindings.updatedRecord = incomingRecord;
         context.log('Writing new record for ID ' + context.bindings.updatedRecord.id);
-        if (person_changed) {
-            people_changes = {id: incomingRecord.id, create: incomingRecord};
-            context.log(JSON.stringify(people_changes));
-            context.bindings.peopleChangesTopic = JSON.stringify(people_changes);
-        }
+
+        people_changes = {id: incomingRecord.id, create: incomingRecord};
+        context.log(JSON.stringify(people_changes));
+        context.bindings.peopleChangesTopic = JSON.stringify(people_changes);
+
         context.done();
     }
 };

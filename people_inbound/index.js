@@ -211,6 +211,7 @@ module.exports = function (context, message) {
         }
 
         // update assignments - just replace the array of old assignments with the array of new ones
+        // even if the diffing is broken and we miss something, at least the record in Codex will be correct
         context.bindings.updatedRecord.assignments = incomingRecord.assignments;
 
         if (person_changed) {

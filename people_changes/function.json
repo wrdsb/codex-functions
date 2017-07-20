@@ -13,7 +13,10 @@
       "name": "$return",
       "type": "sendGrid",
       "direction": "out",
-      "apiKey" : "CodexSendGridKey"
+      "apiKey" : "CodexSendGridKey",
+      "from": "{FromEmail}",
+      "to": "{ToEmail}",
+      "subject": "Codex person change"
     }
   ]
 }

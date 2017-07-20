@@ -147,8 +147,8 @@ module.exports = function (context, message) {
         var deletedAssignments = [];
 
         newAssignments.forEach( function(newAssignment) {
-            if (oldAssignments.some( function(oldAssignment) {
-                    oldAssignment.ipps_job_code            != newAssignment.ipps_job_code &&
+            if (!oldAssignments.some( function(oldAssignment) {
+                    return oldAssignment.ipps_job_code     != newAssignment.ipps_job_code &&
                     oldAssignment.ipps_location_code       != newAssignment.ipps_location_code &&
                     oldAssignment.ipps_employee_group_code != newAssignment.ipps_employee_group_code;
             })) {
@@ -158,29 +158,30 @@ module.exports = function (context, message) {
 
         newAssignments.forEach( function(newAssignment) {
             if (oldAssignments.some( function(oldAssignment) {
-                    oldAssignment.ipps_job_code            == newAssignment.ipps_job_code &&
+                    return oldAssignment.ipps_job_code     == newAssignment.ipps_job_code &&
                     oldAssignment.ipps_location_code       == newAssignment.ipps_location_code &&
                     oldAssignment.ipps_employee_group_code == newAssignment.ipps_employee_group_code &&
-
-                    oldAssignment.ipps_job_description            != newAssignment.ipps_job_description ||
-                    oldAssignment.ipps_location_description       != newAssignment.ipps_location_description ||
-                    oldAssignment.ipps_employee_group_category    != newAssignment.ipps_employee_group_category ||
-                    oldAssignment.ipps_employee_group_description != newAssignment.ipps_employee_group_description ||
-                    oldAssignment.ipps_school_code                != newAssignment.ipps_school_code ||
-                    oldAssignment.ipps_school_type                != newAssignment.ipps_school_type ||
-                    oldAssignment.ipps_panel                      != newAssignment.ipps_panel ||
-                    oldAssignment.ipps_phone_no                   != newAssignment.ipps_phone_no ||
-                    oldAssignment.ipps_extension                  != newAssignment.ipps_extension ||
-                    oldAssignment.ipps_home_location_indicator    != newAssignment.ipps_home_location_indicator ||
-                    oldAssignment.ipps_activity_code              != newAssignment.ipps_activity_code;
+                    (
+                        oldAssignment.ipps_job_description            != newAssignment.ipps_job_description ||
+                        oldAssignment.ipps_location_description       != newAssignment.ipps_location_description ||
+                        oldAssignment.ipps_employee_group_category    != newAssignment.ipps_employee_group_category ||
+                        oldAssignment.ipps_employee_group_description != newAssignment.ipps_employee_group_description ||
+                        oldAssignment.ipps_school_code                != newAssignment.ipps_school_code ||
+                        oldAssignment.ipps_school_type                != newAssignment.ipps_school_type ||
+                        oldAssignment.ipps_panel                      != newAssignment.ipps_panel ||
+                        oldAssignment.ipps_phone_no                   != newAssignment.ipps_phone_no ||
+                        oldAssignment.ipps_extension                  != newAssignment.ipps_extension ||
+                        oldAssignment.ipps_home_location_indicator    != newAssignment.ipps_home_location_indicator ||
+                        oldAssignment.ipps_activity_code              != newAssignment.ipps_activity_code
+                    );
             })) {
                 updatedAssignments.push(newAssignment);
             }
         });
 
         oldAssignments.forEach( function(oldAssignment) {
-            if (newAssignments.some( function(newAssignment) {
-                    newAssignment.ipps_job_code            != oldAssignment.ipps_job_code &&
+            if (!newAssignments.some( function(newAssignment) {
+                    return newAssignment.ipps_job_code     != oldAssignment.ipps_job_code &&
                     newAssignment.ipps_location_code       != oldAssignment.ipps_location_code &&
                     newAssignment.ipps_employee_group_code != oldAssignment.ipps_employee_group_code;
             })) {

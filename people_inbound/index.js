@@ -137,18 +137,23 @@ module.exports = function (context, message) {
         var newAssignments = incomingRecord.assignments;
         var oldAssignments = context.bindings.existingRecord.assignments;
 
+        context.log('New Assignments:')
+        context.log(newAssignments);
+        context.log('Old Assignments')
+        context.log(oldAssignments);
+
         var createdAssignments = [];
         var updatedAssignments = [];
         var deletedAssignments = [];
 
-        createdAssignments = newAssignments.filter(function(newAssignment) {
-            var matchFound = oldAssignments.some(function(oldAssignment) {
-                if (oldAssignment.ipps_job_code            != newAssignment.ipps_job_code &&
-                    oldAssignment.ipps_location_code       != newAssignment.ipps_location_code &&
-                    oldAssignment.ipps_employee_group_code != newAssignment.ipps_employee_group_code
-                ) return true;
-            });
-            return matchFound;
+        newAssignments.forEach( function(newAssignment) {
+            if (oldAssignments.some( function(oldAssignment) {
+                return oldAssignment.ipps_job_code            != newAssignment.ipps_job_code &&
+                       oldAssignment.ipps_location_code       != newAssignment.ipps_location_code &&
+                       oldAssignment.ipps_employee_group_code != newAssignment.ipps_employee_group_code;
+            })) {
+                createdAssignments.push(newAssignment);
+            }
         });
 
         updatedAssignments = newAssignments.filter(function(newAssignment) {
@@ -157,18 +162,16 @@ module.exports = function (context, message) {
                     oldAssignment.ipps_location_code       == newAssignment.ipps_location_code &&
                     oldAssignment.ipps_employee_group_code == newAssignment.ipps_employee_group_code &&
 
-                    oldAssignment.ipps_job_description            != newAssignment.ipps_job_description &&
-                    oldAssignment.ipps_location_code              != newAssignment.ipps_location_code &&
-                    oldAssignment.ipps_location_description       != newAssignment.ipps_location_description &&
-                    oldAssignment.ipps_employee_group_code        != newAssignment.ipps_employee_group_code &&
-                    oldAssignment.ipps_employee_group_category    != newAssignment.ipps_employee_group_category &&
-                    oldAssignment.ipps_employee_group_description != newAssignment.ipps_employee_group_description &&
-                    oldAssignment.ipps_school_code                != newAssignment.ipps_school_code &&
-                    oldAssignment.ipps_school_type                != newAssignment.ipps_school_type &&
-                    oldAssignment.ipps_panel                      != newAssignment.ipps_panel &&
-                    oldAssignment.ipps_phone_no                   != newAssignment.ipps_phone_no &&
-                    oldAssignment.ipps_extension                  != newAssignment.ipps_extension &&
-                    oldAssignment.ipps_home_location_indicator    != newAssignment.ipps_home_location_indicator &&
+                    oldAssignment.ipps_job_description            != newAssignment.ipps_job_description ||
+                    oldAssignment.ipps_location_description       != newAssignment.ipps_location_description ||
+                    oldAssignment.ipps_employee_group_category    != newAssignment.ipps_employee_group_category ||
+                    oldAssignment.ipps_employee_group_description != newAssignment.ipps_employee_group_description ||
+                    oldAssignment.ipps_school_code                != newAssignment.ipps_school_code ||
+                    oldAssignment.ipps_school_type                != newAssignment.ipps_school_type ||
+                    oldAssignment.ipps_panel                      != newAssignment.ipps_panel ||
+                    oldAssignment.ipps_phone_no                   != newAssignment.ipps_phone_no ||
+                    oldAssignment.ipps_extension                  != newAssignment.ipps_extension ||
+                    oldAssignment.ipps_home_location_indicator    != newAssignment.ipps_home_location_indicator ||
                     oldAssignment.ipps_activity_code              != newAssignment.ipps_activity_code
                 ) return true;
             });

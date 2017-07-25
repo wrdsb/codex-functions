@@ -1,15 +1,7 @@
 module.exports = function (context, message) {
     context.log(context);
 
-    var outboundMail = {
-        "personalizations": [ { "to": [ { "email": "james_schumann@wrdsb.ca" } ] } ],
-        from: "codex@wrdsb.ca",
-        subject: "Codex person change",
-        content: [{
-            type: 'text/plain',
-            value: message
-        }]
-    };
+    context.bindings.person_change = JSON.stringify(message);
 
-    context.done(null, outboundMail);
+    context.done();
 };

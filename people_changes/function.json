@@ -10,7 +10,7 @@
       "direction": "in"
     },
     {
-      "name": "person_change",
+      "name": "change",
       "type": "documentDB",
       "databaseName": "codex",
       "collectionName": "people_changes",

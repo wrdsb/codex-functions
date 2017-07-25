@@ -216,7 +216,7 @@ module.exports = function (context, message) {
 
         if (person_changed) {
             context.log('Writing updated record for ID ' + context.bindings.updatedRecord.id);
-            people_changes = {id: incomingRecord.id, update: people_changes};
+            people_changes = {ein: incomingRecord.id, update: people_changes};
             context.log(JSON.stringify(people_changes));
             context.bindings.peopleChangesTopic = JSON.stringify(people_changes);
         } else {
@@ -228,7 +228,7 @@ module.exports = function (context, message) {
         context.bindings.updatedRecord = incomingRecord;
         context.log('Writing new record for ID ' + context.bindings.updatedRecord.id);
 
-        people_changes = {id: incomingRecord.id, create: incomingRecord};
+        people_changes = {ein: incomingRecord.id, create: incomingRecord};
         context.log(JSON.stringify(people_changes));
         context.bindings.peopleChangesTopic = JSON.stringify(people_changes);
 

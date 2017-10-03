@@ -1,0 +1,27 @@
+{
+    "full_name": "Crestview Public School",
+    "abbreviated_name": "Crestview",
+    "street_address": "153 Montcalm Dr.",
+    "city": "Kitchener",
+    "province": "ON",
+    "postal_code": "N2B 2R6",
+    "phone": "519-893-1140",
+    "fax": "519-893-0917",
+    "website": "https://cre.wrdsb.ca/",
+    "alpha_code": "CRE",
+    "school_type_code": "Elem",
+    "mident": "127876",
+    "principal": "Pauline Shiry",
+    "vice_principals": [
+        "WILLIAMS, CAROL CAROL",
+        "Michael Sendrea",
+        "Michael Sendrea"
+    ],
+    "id": "cre",
+    "_rid": "0EZCAOpzAQAjAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQAjAAAAAAAAAA==/",
+    "_etag": "\"0f007d47-0000-0000-0000-593723bc0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496785851
+}

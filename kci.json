@@ -1,0 +1,32 @@
+{
+    "full_name": "Kitchener-Waterloo Collegiate & Vocational School",
+    "abbreviated_name": "KCI",
+    "street_address": "787 King St. W.",
+    "city": "Kitchener",
+    "province": "ON",
+    "postal_code": "N2G 1E3",
+    "phone": "519-745-6851",
+    "fax": "519-745-1549",
+    "website": "https://kci.wrdsb.ca/",
+    "alpha_code": "KCI",
+    "school_type_code": "Sec",
+    "mident": "920495",
+    "principal": "Cathy Vollmer-Ashley",
+    "vice_principals": [
+        "WINDSOR, JOSH STRATTON",
+        "Brett Dubrick",
+        "Brad Marsh",
+        "Jason Denhart",
+        "Brett Dubrick",
+        "Brad Marsh"
+    ],
+    "id": "kci",
+    "_rid": "0EZCAOpzAQBMAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQBMAAAAAAAAAA==/",
+    "_etag": "\"0f005e47-0000-0000-0000-593723bb0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "staff_calendar_id": "6cl048achgrk1e4vj4gm9tv7c4@group.calendar.google.com",
+    "public_calendar_id": "01dv21mo3p98ibt8oiime54idc@group.calendar.google.com",
+    "_ts": 1496785850
+}

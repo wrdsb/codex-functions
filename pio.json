@@ -1,0 +1,27 @@
+{
+    "full_name": "Pioneer Park Public School",
+    "abbreviated_name": "Pioneer Park",
+    "street_address": "55 Upper Canada Dr.",
+    "city": "Kitchener",
+    "province": "ON",
+    "postal_code": "N2P 1G2",
+    "phone": "519-748-0142",
+    "fax": "519-748-6576",
+    "website": "https://pio.wrdsb.ca/",
+    "alpha_code": "PIO",
+    "school_type_code": "Elem",
+    "mident": "445878",
+    "principal": "Tracy Tait",
+    "vice_principals": [
+        "CHIARELLI, NICK",
+        "Jeff Bumstead",
+        "Jeff Bumstead"
+    ],
+    "id": "pio",
+    "_rid": "0EZCAOpzAQBuAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQBuAAAAAAAAAA==/",
+    "_etag": "\"0f002447-0000-0000-0000-593723b90000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496785849
+}

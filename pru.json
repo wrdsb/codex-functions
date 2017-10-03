@@ -1,0 +1,23 @@
+{
+    "full_name": "Prueter Public School",
+    "abbreviated_name": "Prueter",
+    "street_address": "40 Prueter Ave.",
+    "city": "Kitchener",
+    "province": "ON",
+    "postal_code": "N2H 6G6",
+    "phone": "519-578-0910",
+    "fax": "519-578-3622",
+    "website": "https://pru.wrdsb.ca/",
+    "alpha_code": "PRU",
+    "school_type_code": "Elem",
+    "mident": "460273",
+    "principal": "Jennifer Crits",
+    "vice_principals": [],
+    "id": "pru",
+    "_rid": "0EZCAOpzAQByAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQByAAAAAAAAAA==/",
+    "_etag": "\"0f004346-0000-0000-0000-5937205f0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496784990
+}

@@ -1,0 +1,25 @@
+{
+    "full_name": "Cedar Creek Public School",
+    "abbreviated_name": "Cedar Creek",
+    "street_address": "55 Hilltop Dr.",
+    "city": "Ayr",
+    "province": "ON",
+    "postal_code": "N0B 1E0",
+    "phone": "519-632-5255",
+    "fax": "519-632-5257",
+    "website": "https://cdc.wrdsb.ca/",
+    "alpha_code": "CDC",
+    "school_type_code": "Elem",
+    "mident": "089451",
+    "principal": "Sofia Brock",
+    "vice_principals": [
+        "PREDDIE, HEATHER MARGARET"
+    ],
+    "id": "cdc",
+    "_rid": "0EZCAOpzAQAXAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQAXAAAAAAAAAA==/",
+    "_etag": "\"0f005a46-0000-0000-0000-5937205f0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496784990
+}

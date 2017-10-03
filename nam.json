@@ -1,0 +1,23 @@
+{
+    "full_name": "N. A. MacEachern Public School",
+    "abbreviated_name": "N. A. MacEachern",
+    "street_address": "580 Rolling Hills Dr.",
+    "city": "Waterloo",
+    "province": "ON",
+    "postal_code": "N2L 4Z9",
+    "phone": "519-885-1731",
+    "fax": "519-885-0064",
+    "website": "https://nam.wrdsb.ca/",
+    "alpha_code": "NAM",
+    "school_type_code": "Elem",
+    "mident": "382620",
+    "principal": "Marty Raymond",
+    "vice_principals": [],
+    "id": "nam",
+    "_rid": "0EZCAOpzAQBjAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQBjAAAAAAAAAA==/",
+    "_etag": "\"00005c18-0000-0000-0000-593ab1580000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1497018706
+}

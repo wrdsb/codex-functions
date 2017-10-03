@@ -1,0 +1,15 @@
+{
+    "id": "edc-conestoga",
+    "etags": "eqO3c9wtJJ4wVWz2xe0E9HiU_D0/Z9IRcE-UmxzuAzOkD7j0I9ZMVOQ",
+    "kind": "admin#directory#resources#calendars#CalendarResource",
+    "resourceDescription": "Education Centre, Building 2, Floor 1",
+    "resourceEmail": "googleapps.wrdsb.ca_6564632d636f6e6573746f6761@resource.calendar.google.com",
+    "resourceId": "edc-conestoga",
+    "resourceName": "Conestoga Room",
+    "resourceType": "Meeting Room",
+    "_rid": "0EZCAIzWlgARAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAIzWlgA=/docs/0EZCAIzWlgARAAAAAAAAAA==/",
+    "_etag": "\"00009700-0000-0000-0000-593ed6760000\"",
+    "_attachments": "attachments/",
+    "_ts": 1497290351
+}

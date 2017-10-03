@@ -1,0 +1,31 @@
+{
+    "full_name": "Jacob Hespeler Secondary School",
+    "abbreviated_name": "JHSS",
+    "street_address": "355 Holiday Inn Dr.",
+    "city": "Cambridge",
+    "province": "ON",
+    "postal_code": "N3C 1Z2",
+    "phone": "519-658-4910",
+    "fax": "519-658-8171",
+    "website": "https://jhs.wrdsb.ca/",
+    "alpha_code": "JHS",
+    "school_type_code": "Sec",
+    "mident": "918555",
+    "principal": "Brenda Cathcart",
+    "vice_principals": [
+        "MCWILLIAMS, JANE ELIZABETH",
+        "Ben Crane",
+        "Jane McWilliams",
+        "Ben Crane",
+        "Jane McWilliams"
+    ],
+    "id": "jhs",
+    "_rid": "0EZCAOpzAQBGAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQBGAAAAAAAAAA==/",
+    "_etag": "\"0f006447-0000-0000-0000-593723bb0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "staff_calendar_id": "6m0f8ri0v7elcqtsf6mhkiccko@group.calendar.google.com",
+    "public_calendar_id": "ubkckrvmc9jefar8mb903u557k@group.calendar.google.com",
+    "_ts": 1496785851
+}

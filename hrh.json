@@ -1,0 +1,32 @@
+{
+    "full_name": "Huron Heights Secondary School",
+    "abbreviated_name": "HHSS",
+    "street_address": "1825 Strasburg Rd.",
+    "city": "Kitchener",
+    "province": "ON",
+    "postal_code": "N2R 1S3",
+    "phone": "519-896-2631",
+    "fax": "519-896-1229",
+    "website": "https://hrh.wrdsb.ca/",
+    "alpha_code": "HRH",
+    "school_type_code": "Sec",
+    "mident": "917931",
+    "principal": "Ed Doadt",
+    "vice_principals": [
+        "FREUND, JUDY ANN",
+        "Judy Freund",
+        "Shawn Weatherdon",
+        "Nancy Dale",
+        "Judy Freund",
+        "Shawn Weatherdon"
+    ],
+    "id": "hrh",
+    "_rid": "0EZCAOpzAQBAAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQBAAAAAAAAAAA==/",
+    "_etag": "\"0f007c47-0000-0000-0000-593723bc0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "staff_calendar_id": "kvsv4hus3l01t982bckmtu39m8@group.calendar.google.com",
+    "public_calendar_id": "5bk7q75mqi2p2jgekrr7pucl04@group.calendar.google.com",
+    "_ts": 1496785851
+}

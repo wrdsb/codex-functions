@@ -1,0 +1,15 @@
+{
+    "id": "edc-waterloo",
+    "etags": "eqO3c9wtJJ4wVWz2xe0E9HiU_D0/KbHA1B9Ga-cAHM8GITTBQOZR0cE",
+    "kind": "admin#directory#resources#calendars#CalendarResource",
+    "resourceDescription": "Education Centre, Building 2, Floor 2",
+    "resourceEmail": "googleapps.wrdsb.ca_6564632d77617465726c6f6f@resource.calendar.google.com",
+    "resourceId": "edc-waterloo",
+    "resourceName": "Waterloo Room",
+    "resourceType": "Meeting Room",
+    "_rid": "0EZCAIzWlgAFAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAIzWlgA=/docs/0EZCAIzWlgAFAAAAAAAAAA==/",
+    "_etag": "\"00008b00-0000-0000-0000-593ed6760000\"",
+    "_attachments": "attachments/",
+    "_ts": 1497290350
+}

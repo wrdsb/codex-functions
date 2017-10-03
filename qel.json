@@ -1,0 +1,27 @@
+{
+    "full_name": "Queen Elizabeth Public School",
+    "abbreviated_name": "Queen Elizabeth",
+    "street_address": "191 Hoffman St.",
+    "city": "Kitchener",
+    "province": "ON",
+    "postal_code": "N2M 3N2",
+    "phone": "519-578-3910",
+    "fax": "519-578-2320",
+    "website": "https://qel.wrdsb.ca/",
+    "alpha_code": "QEL",
+    "school_type_code": "Elem",
+    "mident": "461962",
+    "principal": "Coosje Weber",
+    "vice_principals": [
+        "SMITH, HOLLY ANNE",
+        "William Grobe",
+        "William Grobe"
+    ],
+    "id": "qel",
+    "_rid": "0EZCAOpzAQBzAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQBzAAAAAAAAAA==/",
+    "_etag": "\"0f003847-0000-0000-0000-593723b90000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496785849
+}

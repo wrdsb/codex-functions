@@ -1,0 +1,27 @@
+{
+    "full_name": "Coronation Public School",
+    "abbreviated_name": "Coronation",
+    "street_address": "757 Concession Rd.",
+    "city": "Cambridge",
+    "province": "ON",
+    "postal_code": "N3H 4L1",
+    "phone": "519-653-1141",
+    "fax": "519-653-5263",
+    "website": "https://cor.wrdsb.ca/",
+    "alpha_code": "COR",
+    "school_type_code": "Elem",
+    "mident": "124354",
+    "principal": "Jodi Albrecht",
+    "vice_principals": [
+        "TRYBUS, PETER",
+        "Peter Trybus",
+        "Craig McLeman"
+    ],
+    "id": "cor",
+    "_rid": "0EZCAOpzAQAgAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQAgAAAAAAAAAA==/",
+    "_etag": "\"0f008247-0000-0000-0000-593723bc0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496785851
+}

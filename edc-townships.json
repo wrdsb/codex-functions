@@ -1,0 +1,15 @@
+{
+    "id": "edc-townships",
+    "etags": "eqO3c9wtJJ4wVWz2xe0E9HiU_D0/fdhadhF8aMFiLmmaPBP91a0cGCo",
+    "kind": "admin#directory#resources#calendars#CalendarResource",
+    "resourceDescription": "Education Centre, Building 1, Floor 1",
+    "resourceEmail": "googleapps.wrdsb.ca_6564632d746f776e7368697073@resource.calendar.google.com",
+    "resourceId": "edc-townships",
+    "resourceName": "Townships Room",
+    "resourceType": "Meeting Room",
+    "_rid": "0EZCAIzWlgAQAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAIzWlgA=/docs/0EZCAIzWlgAQAAAAAAAAAA==/",
+    "_etag": "\"00009600-0000-0000-0000-593ed6760000\"",
+    "_attachments": "attachments/",
+    "_ts": 1497290351
+}

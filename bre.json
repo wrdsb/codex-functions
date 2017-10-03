@@ -1,0 +1,27 @@
+{
+    "full_name": "Breslau  Public School",
+    "abbreviated_name": "Breslau",
+    "street_address": "58 Joseph St.",
+    "city": "Breslau",
+    "province": "ON",
+    "postal_code": "N0B 1M0",
+    "phone": "519-648-2242",
+    "fax": "519-648-2850",
+    "website": "https://bre.wrdsb.ca/",
+    "alpha_code": "BRE",
+    "school_type_code": "Elem",
+    "mident": "588849",
+    "principal": "Marcia Lubert",
+    "vice_principals": [
+        "MORGAN, SHARON",
+        "Sharon Morgan",
+        "Sharon Morgan"
+    ],
+    "id": "bre",
+    "_rid": "0EZCAOpzAQARAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQARAAAAAAAAAA==/",
+    "_etag": "\"0f005647-0000-0000-0000-593723ba0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496785850
+}

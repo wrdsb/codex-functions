@@ -1,0 +1,27 @@
+{
+    "full_name": "Avenue Road Public School",
+    "abbreviated_name": "Avenue Road",
+    "street_address": "40 Gail St.",
+    "city": "Cambridge",
+    "province": "ON",
+    "postal_code": "N1R 4M2",
+    "phone": "519-623-0860",
+    "fax": "519-326-5922",
+    "website": "https://ave.wrdsb.ca/",
+    "alpha_code": "AVE",
+    "school_type_code": "Elem",
+    "mident": "028541",
+    "principal": "Stephen McCrae",
+    "vice_principals": [
+        "MUNRO, STEPHANIE",
+        "Stephanie Munro",
+        "Stephanie Munro"
+    ],
+    "id": "ave",
+    "_rid": "0EZCAOpzAQAKAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQAKAAAAAAAAAA==/",
+    "_etag": "\"0f005447-0000-0000-0000-593723ba0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496785850
+}

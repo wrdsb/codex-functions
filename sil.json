@@ -1,0 +1,27 @@
+{
+    "full_name": "Silverheights Public School",
+    "abbreviated_name": "Silverheights",
+    "street_address": "390 Scott Rd.",
+    "city": "Cambridge",
+    "province": "ON",
+    "postal_code": "N3C 3Z7",
+    "phone": "519-658-9023",
+    "fax": "519-658-2764",
+    "website": "https://sil.wrdsb.ca/",
+    "alpha_code": "SIL",
+    "school_type_code": "Elem",
+    "mident": "533718",
+    "principal": "Leslie McNabb",
+    "vice_principals": [
+        "CAMPBELL, WENDY",
+        "Valerie Martin",
+        "Valerie Martin"
+    ],
+    "id": "sil",
+    "_rid": "0EZCAOpzAQB+AAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQB+AAAAAAAAAA==/",
+    "_etag": "\"0f004f47-0000-0000-0000-593723ba0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496785850
+}

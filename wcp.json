@@ -1,0 +1,23 @@
+{
+    "full_name": "Winston Churchill Public School",
+    "abbreviated_name": "Winston Churchill",
+    "street_address": "100 Milford Ave.",
+    "city": "Waterloo",
+    "province": "ON",
+    "postal_code": "N2L 3Z3",
+    "phone": "519-884-3722",
+    "fax": "519-884-3830",
+    "website": "https://wcp.wrdsb.ca/",
+    "alpha_code": "WCP",
+    "school_type_code": "Elem",
+    "mident": "615889",
+    "principal": "Pat Dale",
+    "vice_principals": [],
+    "id": "wcp",
+    "_rid": "0EZCAOpzAQCoAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQCoAAAAAAAAAA==/",
+    "_etag": "\"0f004846-0000-0000-0000-5937205f0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496784990
+}

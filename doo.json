@@ -1,0 +1,26 @@
+{
+    "id": "doo",
+    "full_name": "Doon Public School",
+    "abbreviated_name": "Doon",
+    "street_address": "1401 Doon Village Rd.",
+    "city": "Kitchener",
+    "province": "ON",
+    "postal_code": "N2P 1A8",
+    "phone": "519-748-1341",
+    "fax": "519-748-1342",
+    "website": "https://doo.wrdsb.ca/",
+    "alpha_code": "DOO",
+    "school_type_code": "Elem",
+    "mident": "588970",
+    "principal": "Beverlie Stewart",
+    "vice_principals": [
+        "Siobhan Shonk",
+        "Siobhan Shonk"
+    ],
+    "is_active": true,
+    "_rid": "0EZCAOpzAQAlAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQAlAAAAAAAAAA==/",
+    "_etag": "\"0f007047-0000-0000-0000-593723bb0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1496785851
+}

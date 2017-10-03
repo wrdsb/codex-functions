@@ -1,0 +1,27 @@
+{
+    "full_name": "Stanley Park Senior Public School",
+    "abbreviated_name": "Stanley Park",
+    "street_address": "191 Hickson Dr.",
+    "city": "Kitchener",
+    "province": "ON",
+    "postal_code": "N2B 2H8",
+    "phone": "519-578-3750",
+    "fax": "519-578-9636",
+    "website": "https://stn.wrdsb.ca/",
+    "alpha_code": "STN",
+    "school_type_code": "Elem",
+    "mident": "534242",
+    "principal": "Sandy Dawson-Currie",
+    "vice_principals": [
+        "BAER, CATHERINE JULIA",
+        "Cathy Baer",
+        "Cathy Baer"
+    ],
+    "id": "stn",
+    "_rid": "0EZCAOpzAQCHAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQCHAAAAAAAAAA==/",
+    "_etag": "\"0f001e47-0000-0000-0000-593723b90000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496785849
+}

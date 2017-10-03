@@ -1,0 +1,23 @@
+{
+    "full_name": "Centennial Public School (Cambridge)",
+    "abbreviated_name": "Centennial Cambridge",
+    "street_address": "100 Weaver St.",
+    "city": "Cambridge",
+    "province": "ON",
+    "postal_code": "N3C 1W4",
+    "phone": "519-658-5121",
+    "fax": "519-658-5262",
+    "website": "https://cnc.wrdsb.ca/",
+    "alpha_code": "CNC",
+    "school_type_code": "Elem",
+    "mident": "090166",
+    "principal": "Kelly Lantink",
+    "vice_principals": [],
+    "id": "cnc",
+    "_rid": "0EZCAOpzAQAZAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQAZAAAAAAAAAA==/",
+    "_etag": "\"0f006e46-0000-0000-0000-593720600000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496784992
+}

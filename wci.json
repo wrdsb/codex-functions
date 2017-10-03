@@ -1,0 +1,30 @@
+{
+    "full_name": "Waterloo Collegiate Institute",
+    "abbreviated_name": "WCI",
+    "street_address": "300 Hazel St.",
+    "city": "Waterloo",
+    "province": "ON",
+    "postal_code": "N2L 3P2",
+    "phone": "519-884-9590",
+    "fax": "519-884-6274",
+    "website": "https://wci.wrdsb.ca/",
+    "alpha_code": "WCI",
+    "school_type_code": "Sec",
+    "mident": "950912",
+    "principal": "Heidi Kolb",
+    "vice_principals": [
+        "SHANTZ, J",
+        "Christian Chapman",
+        "Christian Chapman",
+        "Tim Gilmore"
+    ],
+    "id": "wci",
+    "_rid": "0EZCAOpzAQCdAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQCdAAAAAAAAAA==/",
+    "_etag": "\"0f003347-0000-0000-0000-593723b90000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "staff_calendar_id": "ai21h0rq6pm3nm83s9qkqueh5g@group.calendar.google.com",
+    "public_calendar_id": "9imv1m8keu47lfc2j34ljtedb0@group.calendar.google.com",
+    "_ts": 1496785849
+}

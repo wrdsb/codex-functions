@@ -1,0 +1,27 @@
+{
+    "full_name": "Wilson Avenue Public School",
+    "abbreviated_name": "Wilson Avenue",
+    "street_address": "221 Wilson Ave.",
+    "city": "Kitchener",
+    "province": "ON",
+    "postal_code": "N2C 1G9",
+    "phone": "519-893-7050",
+    "fax": "519-893-0461",
+    "website": "https://wls.wrdsb.ca/",
+    "alpha_code": "WLS",
+    "school_type_code": "Elem",
+    "mident": "612502",
+    "principal": "Elizabeth Martz",
+    "vice_principals": [
+        "GRAHAM, VINCE VINCENT",
+        "Vince Graham",
+        "Vince Graham"
+    ],
+    "id": "wls",
+    "_rid": "0EZCAOpzAQCnAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQCnAAAAAAAAAA==/",
+    "_etag": "\"0f003f47-0000-0000-0000-593723ba0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496785849
+}

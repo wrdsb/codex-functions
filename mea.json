@@ -1,0 +1,23 @@
+{
+    "full_name": "Meadowlane Public School",
+    "abbreviated_name": "Meadowlane",
+    "street_address": "236 Forestwood Dr.",
+    "city": "Kitchener",
+    "province": "ON",
+    "postal_code": "N2N 1C1",
+    "phone": "519-579-5030",
+    "fax": "519-579-2851",
+    "website": "https://mea.wrdsb.ca/",
+    "alpha_code": "MEA",
+    "school_type_code": "Elem",
+    "mident": "356425",
+    "principal": "Rebecca Jutzi",
+    "vice_principals": [],
+    "id": "mea",
+    "_rid": "0EZCAOpzAQBgAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQBgAAAAAAAAAA==/",
+    "_etag": "\"0f00a446-0000-0000-0000-593720620000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496784993
+}

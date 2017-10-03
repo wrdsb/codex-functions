@@ -1,0 +1,23 @@
+{
+    "full_name": "Mackenzie King Public School",
+    "abbreviated_name": "Mackenzie King",
+    "street_address": "51 Natchez Rd.",
+    "city": "Kitchener",
+    "province": "ON",
+    "postal_code": "N2B 3A7",
+    "phone": "519-745-8694",
+    "fax": "519-745-1461",
+    "website": "https://mck.wrdsb.ca/",
+    "alpha_code": "MCK",
+    "school_type_code": "Elem",
+    "mident": "589101",
+    "principal": "Kathryn Haddock",
+    "vice_principals": [],
+    "id": "mck",
+    "_rid": "0EZCAOpzAQBZAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQBZAAAAAAAAAA==/",
+    "_etag": "\"0f005946-0000-0000-0000-5937205f0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496784990
+}

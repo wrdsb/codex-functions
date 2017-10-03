@@ -1,0 +1,27 @@
+{
+    "full_name": "Westmount Public School",
+    "abbreviated_name": "Westmount",
+    "street_address": "329 Glasgow St.",
+    "city": "Kitchener",
+    "province": "ON",
+    "postal_code": "N2M 2M9",
+    "phone": "519-578-5430",
+    "fax": "519-578-5431",
+    "website": "https://wsm.wrdsb.ca/",
+    "alpha_code": "WSM",
+    "school_type_code": "Elem",
+    "mident": "602230",
+    "principal": "Tamara Kaufman",
+    "vice_principals": [
+        "WIECHERS, BRIAN C",
+        "Brian Wiechers",
+        "Brian Wiechers"
+    ],
+    "id": "wsm",
+    "_rid": "0EZCAOpzAQCiAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQCiAAAAAAAAAA==/",
+    "_etag": "\"0f006b47-0000-0000-0000-593723bb0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496785851
+}

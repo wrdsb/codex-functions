@@ -1,0 +1,23 @@
+{
+    "full_name": "Blair Road Public School",
+    "abbreviated_name": "Blair Road",
+    "street_address": "85 Sunset Blvd",
+    "city": "Cambridge",
+    "province": "ON",
+    "postal_code": "N1S1A9",
+    "phone": "5196215620",
+    "fax": "5196216009",
+    "website": "http://blr.wrdsb.ca/",
+    "alpha_code": "BLR",
+    "school_type_code": "Elem",
+    "mident": "050512",
+    "principal": "Helen Turner-Fisher",
+    "vice_principals": [],
+    "id": "blr",
+    "_rid": "0EZCAOpzAQAOAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQAOAAAAAAAAAA==/",
+    "_etag": "\"0f008846-0000-0000-0000-593720610000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496784992
+}

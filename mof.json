@@ -1,0 +1,27 @@
+{
+    "full_name": "Moffat Creek Public School",
+    "abbreviated_name": "Moffat Creek",
+    "street_address": "710 Myers Rd.",
+    "city": "Cambridge",
+    "province": "ON",
+    "postal_code": "N1P 0A8",
+    "phone": "519-620-1661",
+    "fax": "519-620-2440",
+    "website": "https://mof.wrdsb.ca/",
+    "alpha_code": "MOF",
+    "school_type_code": "Elem",
+    "mident": "109487",
+    "principal": "Allan MacKay",
+    "vice_principals": [
+        "CHATHA, BOBBIE KAUR",
+        "Amy Humphrys",
+        "Amy Humphrys"
+    ],
+    "id": "mof",
+    "_rid": "0EZCAOpzAQBiAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQBiAAAAAAAAAA==/",
+    "_etag": "\"0f004547-0000-0000-0000-593723ba0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496785849
+}

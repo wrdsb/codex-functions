@@ -1,0 +1,27 @@
+{
+    "full_name": "Edna Staebler Public School",
+    "abbreviated_name": "Edna Staebler",
+    "street_address": "450 Bernay Dr.",
+    "city": "Waterloo",
+    "province": "ON",
+    "postal_code": "N2T 3A3",
+    "phone": "519-880-2646",
+    "fax": "519-880-8630",
+    "website": "https://est.wrdsb.ca/",
+    "alpha_code": "EST",
+    "school_type_code": "Elem",
+    "mident": "134618",
+    "principal": "Paul Fracas",
+    "vice_principals": [
+        "HANSEN, JAN GRAHAM",
+        "Sanj Sathiyamoorthy",
+        "Sanj Sathiyamoorthy"
+    ],
+    "id": "est",
+    "_rid": "0EZCAOpzAQAoAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQAoAAAAAAAAAA==/",
+    "_etag": "\"0f005c47-0000-0000-0000-593723ba0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496785850
+}

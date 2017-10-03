@@ -1,0 +1,27 @@
+{
+    "full_name": "Sir Adam Beck Public School",
+    "abbreviated_name": "Sir Adam Beck",
+    "street_address": "1140 Snyder's Rd. W.",
+    "city": "Baden",
+    "province": "ON",
+    "postal_code": "N3A 0A8",
+    "phone": "519-634-8757",
+    "fax": "519-634-5077",
+    "website": "https://sab.wrdsb.ca/",
+    "alpha_code": "SAB",
+    "school_type_code": "Elem",
+    "mident": "379959",
+    "principal": "Alison Wardrop",
+    "vice_principals": [
+        "MARTIN, LISA",
+        "Christopher Greenhough",
+        "Christopher Greenhough"
+    ],
+    "id": "sab",
+    "_rid": "0EZCAOpzAQB-AAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQB-AAAAAAAAAA==/",
+    "_etag": "\"0f004047-0000-0000-0000-593723ba0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496785849
+}

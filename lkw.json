@@ -1,0 +1,27 @@
+{
+    "full_name": "Lackner Woods Public School",
+    "abbreviated_name": "Lackner Woods",
+    "street_address": "151 Zeller Dr.",
+    "city": "Kitchener",
+    "province": "ON",
+    "postal_code": "N2A 4H4",
+    "phone": "519-894-1150",
+    "fax": "519-894-2908",
+    "website": "https://lkw.wrdsb.ca/",
+    "alpha_code": "LKW",
+    "school_type_code": "Elem",
+    "mident": "303003",
+    "principal": "Maria Lotimer",
+    "vice_principals": [
+        "MILLER, PENNY MARIE",
+        "Michael Sendrea",
+        "Michael Sendrea"
+    ],
+    "id": "lkw",
+    "_rid": "0EZCAOpzAQBNAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQBNAAAAAAAAAA==/",
+    "_etag": "\"0f006747-0000-0000-0000-593723bb0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496785851
+}

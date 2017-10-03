@@ -1,0 +1,15 @@
+{
+    "id": "edc-catc-lab",
+    "etags": "eqO3c9wtJJ4wVWz2xe0E9HiU_D0/EZ4uAvrLPnudg1faTwVkAQuo_WU",
+    "kind": "admin#directory#resources#calendars#CalendarResource",
+    "resourceDescription": "Education Centre, Building 2, Floor 2",
+    "resourceEmail": "googleapps.wrdsb.ca_6564632d636174632d6c6162@resource.calendar.google.com",
+    "resourceId": "edc-catc-lab",
+    "resourceName": "Windows CATC Lab",
+    "resourceType": "Meeting Room",
+    "_rid": "0EZCAIzWlgAGAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAIzWlgA=/docs/0EZCAIzWlgAGAAAAAAAAAA==/",
+    "_etag": "\"00008c00-0000-0000-0000-593ed6760000\"",
+    "_attachments": "attachments/",
+    "_ts": 1497290350
+}

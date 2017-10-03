@@ -1,0 +1,25 @@
+{
+    "full_name": "A. R. Kaufman Public School",
+    "abbreviated_name": "A. R. Kaufman",
+    "street_address": "11 Chopin Dr.",
+    "city": "Kitchener",
+    "province": "ON",
+    "postal_code": "N2M 2G3",
+    "phone": "519-745-7312",
+    "fax": "519-745-6434",
+    "website": "https://ark.wrdsb.ca/",
+    "alpha_code": "ARK",
+    "school_type_code": "Elem",
+    "mident": "001058",
+    "principal": "Pam Kaur",
+    "vice_principals": [
+        "Sean Finn"
+    ],
+    "id": "ark",
+    "_rid": "0EZCAOpzAQABAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQABAAAAAAAAAA==/",
+    "_etag": "\"0000351a-0000-0000-0000-593eefe10000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1497296849
+}

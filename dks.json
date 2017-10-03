@@ -1,0 +1,23 @@
+{
+    "id": "dks",
+    "full_name": "Dickson Public School",
+    "abbreviated_name": "Dickson Public",
+    "street_address": "65 St Andrews St",
+    "city": "Cambridge",
+    "province": "ON",
+    "postal_code": "N1S1M6",
+    "phone": "5196216030",
+    "fax": "5196216942",
+    "website": "http://dks.wrdsb.ca/",
+    "alpha_code": "DKS",
+    "school_type_code": "Elem",
+    "mident": "140341",
+    "principal": "FRAME, BARRY",
+    "vice_principal": "",
+    "is_active": true,
+    "_rid": "0EZCAOpzAQAkAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQAkAAAAAAAAAA==/",
+    "_etag": "\"00003106-0000-0000-0000-5925d8e90000\"",
+    "_attachments": "attachments/",
+    "_ts": 1495652579
+}

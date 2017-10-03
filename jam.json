@@ -1,0 +1,32 @@
+{
+    "full_name": "Sir John A. Macdonald Secondary School",
+    "abbreviated_name": "SJAM",
+    "street_address": "650 Laurelwood Dr.",
+    "city": "Waterloo",
+    "province": "ON",
+    "postal_code": "N2V 2V1",
+    "phone": "519-880-9979",
+    "fax": "519-880-9718",
+    "website": "https://jam.wrdsb.ca/",
+    "alpha_code": "JAM",
+    "school_type_code": "Sec",
+    "mident": "942006",
+    "principal": "Jennifer Shortreed",
+    "vice_principals": [
+        "WILLIAMSON, DAVID L",
+        "Ian Clancy",
+        "David Williamson",
+        "Jennifer Bistolas",
+        "Ian Clancy",
+        "David Williamson"
+    ],
+    "id": "jam",
+    "_rid": "0EZCAOpzAQCAAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQCAAAAAAAAAAA==/",
+    "_etag": "\"0f006d47-0000-0000-0000-593723bb0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "staff_calendar_id": "2mvvt6u3anfltqbbeafg3hnb20@group.calendar.google.com",
+    "public_calendar_id": "b2b2aj9apj00e2rgl6hj5qm9o8@group.calendar.google.com",
+    "_ts": 1496785851
+}

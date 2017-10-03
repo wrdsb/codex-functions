@@ -1,0 +1,29 @@
+{
+    "full_name": "Galt Collegiate Institute & Vocational School",
+    "abbreviated_name": "GCI",
+    "street_address": "200 Water St. N.",
+    "city": "Cambridge",
+    "province": "ON",
+    "postal_code": "N1R 6V2",
+    "phone": "519-623-3600",
+    "fax": "519-623-6810",
+    "website": "https://gci.wrdsb.ca/",
+    "alpha_code": "GCI",
+    "school_type_code": "Sec",
+    "mident": "911399",
+    "principal": "Beverly Wood",
+    "vice_principals": [
+        "LAVELL, ANDREW JAMES",
+        "Gina Lammel",
+        "Andy Lavell"
+    ],
+    "id": "gci",
+    "_rid": "0EZCAOpzAQA0AAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQA0AAAAAAAAAA==/",
+    "_etag": "\"0f005f47-0000-0000-0000-593723bb0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "staff_calendar_id": "313ronnms1kbp0tmf83rgsmeu8@group.calendar.google.com",
+    "public_calendar_id": "djj2cu231rvf5fb2g8o9uqb9gg@group.calendar.google.com",
+    "_ts": 1496785850
+}

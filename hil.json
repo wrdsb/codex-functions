@@ -1,0 +1,25 @@
+{
+    "full_name": "Hillcrest Public School",
+    "abbreviated_name": "Hillcrest",
+    "street_address": "31 Renwick Ave.",
+    "city": "Cambridge",
+    "province": "ON",
+    "postal_code": "N3C 2T5",
+    "phone": "519-658-5187",
+    "fax": "519-658-5360",
+    "website": "https://hil.wrdsb.ca/",
+    "alpha_code": "HIL",
+    "school_type_code": "Elem",
+    "mident": "257605",
+    "principal": "Marc Laurente",
+    "vice_principals": [
+        "BAILEY, ANN MAUREEN"
+    ],
+    "id": "hil",
+    "_rid": "0EZCAOpzAQA9AAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQA9AAAAAAAAAA==/",
+    "_etag": "\"0f006b46-0000-0000-0000-5937205f0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496784991
+}

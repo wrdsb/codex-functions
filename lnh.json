@@ -1,0 +1,27 @@
+{
+    "full_name": "Lincoln Heights Public School",
+    "abbreviated_name": "Lincoln Heights",
+    "street_address": "270 Quickfall Dr.",
+    "city": "Waterloo",
+    "province": "ON",
+    "postal_code": "N2J 3S9",
+    "phone": "519-884-4010",
+    "fax": "519-884-2152",
+    "website": "https://lnh.wrdsb.ca/",
+    "alpha_code": "LNH",
+    "school_type_code": "Elem",
+    "mident": "313246",
+    "principal": "Janet Hale",
+    "vice_principals": [
+        "GRIFFIN, L LEE",
+        "Murray Crewson",
+        "Murray Crewson"
+    ],
+    "id": "lnh",
+    "_rid": "0EZCAOpzAQBUAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQBUAAAAAAAAAA==/",
+    "_etag": "\"0f001647-0000-0000-0000-593723b90000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496785849
+}

@@ -1,0 +1,27 @@
+{
+    "full_name": "Williamsburg Public School",
+    "abbreviated_name": "Williamsburg",
+    "street_address": "760 Commonwealth Cres.",
+    "city": "Kitchener",
+    "province": "ON",
+    "postal_code": "N2E 4K7",
+    "phone": "519-742-1848",
+    "fax": "519-742-6869",
+    "website": "https://wlm.wrdsb.ca/",
+    "alpha_code": "WLM",
+    "school_type_code": "Elem",
+    "mident": "278280",
+    "principal": "Rose Noonan",
+    "vice_principals": [
+        "MARTIN, VALERIE MARIE",
+        "Lori Peebles",
+        "Lori Peebles"
+    ],
+    "id": "wlm",
+    "_rid": "0EZCAOpzAQClAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQClAAAAAAAAAA==/",
+    "_etag": "\"0f005247-0000-0000-0000-593723ba0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496785850
+}

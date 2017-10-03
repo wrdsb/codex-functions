@@ -1,0 +1,25 @@
+{
+    "full_name": "Smithson Public School",
+    "abbreviated_name": "Smithson",
+    "street_address": "150 Belleview Ave.",
+    "city": "Kitchener",
+    "province": "ON",
+    "postal_code": "N2B 1G7",
+    "phone": "519-578-3890",
+    "fax": "519-578-5975",
+    "website": "https://smi.wrdsb.ca/",
+    "alpha_code": "SMI",
+    "school_type_code": "Elem",
+    "mident": "518905",
+    "principal": "Michelle Schmid",
+    "vice_principals": [
+        "SHARTUN, NESTOR"
+    ],
+    "id": "smi",
+    "_rid": "0EZCAOpzAQCBAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQCBAAAAAAAAAA==/",
+    "_etag": "\"0f008546-0000-0000-0000-593720610000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496784992
+}

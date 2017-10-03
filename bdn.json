@@ -1,0 +1,27 @@
+{
+    "full_name": "Baden Public School",
+    "abbreviated_name": "Baden",
+    "street_address": "155 Livingston Blvd.",
+    "city": "Baden",
+    "province": "ON",
+    "postal_code": "N3A 4M6",
+    "phone": "519-634-9320",
+    "fax": "519-634-9322",
+    "website": "https://bdn.wrdsb.ca/",
+    "alpha_code": "BDN",
+    "school_type_code": "Elem",
+    "mident": "034363",
+    "principal": "Nancy Woodhall",
+    "vice_principals": [
+        "CREWSON, MURRAY ROBERT",
+        "Brian Wiechers",
+        "Brian Wiechers"
+    ],
+    "id": "bdn",
+    "_rid": "0EZCAOpzAQAMAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQAMAAAAAAAAAA==/",
+    "_etag": "\"0f006a47-0000-0000-0000-593723bb0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496785851
+}

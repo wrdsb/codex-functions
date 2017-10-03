@@ -1,0 +1,27 @@
+{
+    "full_name": "Forest Hill Public School",
+    "abbreviated_name": "Forest Hill",
+    "street_address": "255 Westmount Rd. E.",
+    "city": "Kitchener",
+    "province": "ON",
+    "postal_code": "N2M 4Z2",
+    "phone": "519-578-5480",
+    "fax": "519-578-5460",
+    "website": "https://fhl.wrdsb.ca/",
+    "alpha_code": "FHL",
+    "school_type_code": "Elem",
+    "mident": "201448",
+    "principal": "Peter Berndt",
+    "vice_principals": [
+        "HUGHES, BRADLEY JAMES",
+        "Brad Hughes",
+        "Brad Hughes"
+    ],
+    "id": "fhl",
+    "_rid": "0EZCAOpzAQAyAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQAyAAAAAAAAAA==/",
+    "_etag": "\"0f003e47-0000-0000-0000-593723b90000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496785849
+}

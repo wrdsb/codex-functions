@@ -1,0 +1,27 @@
+{
+    "full_name": "Franklin Public School",
+    "abbreviated_name": "Franklin",
+    "street_address": "371 Franklin St. N.",
+    "city": "Kitchener",
+    "province": "ON",
+    "postal_code": "N2A 1Y9",
+    "phone": "519-893-1334",
+    "fax": "519-893-1047",
+    "website": "https://fra.wrdsb.ca/",
+    "alpha_code": "FRA",
+    "school_type_code": "Elem",
+    "mident": "203394",
+    "principal": "Paul Milne",
+    "vice_principals": [
+        "MILLER, PENNY MARIE",
+        "Penny Miller",
+        "Penny Miller"
+    ],
+    "id": "fra",
+    "_rid": "0EZCAOpzAQAzAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQAzAAAAAAAAAA==/",
+    "_etag": "\"0f004e47-0000-0000-0000-593723ba0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496785850
+}

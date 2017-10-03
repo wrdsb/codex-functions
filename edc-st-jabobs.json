@@ -1,0 +1,15 @@
+{
+    "id": "edc-st-jabobs",
+    "etags": "eqO3c9wtJJ4wVWz2xe0E9HiU_D0/FcbR7pxZxxx22k-deHWFGF-d-S4",
+    "kind": "admin#directory#resources#calendars#CalendarResource",
+    "resourceDescription": "Education Centre, Building 1, Floor 1",
+    "resourceEmail": "googleapps.wrdsb.ca_6564632d73742d6a61626f6273@resource.calendar.google.com",
+    "resourceId": "edc-st-jabobs",
+    "resourceName": "St. Jacobs Learning Hub",
+    "resourceType": "Meeting Room",
+    "_rid": "0EZCAIzWlgAKAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAIzWlgA=/docs/0EZCAIzWlgAKAAAAAAAAAA==/",
+    "_etag": "\"00009000-0000-0000-0000-593ed6760000\"",
+    "_attachments": "attachments/",
+    "_ts": 1497290351
+}

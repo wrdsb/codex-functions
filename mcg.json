@@ -1,0 +1,27 @@
+{
+    "full_name": "MacGregor Senior Public School",
+    "abbreviated_name": "MacGregor",
+    "street_address": "32 Central St.",
+    "city": "Waterloo",
+    "province": "ON",
+    "postal_code": "N2L 3A6",
+    "phone": "519-885-6200",
+    "fax": "519-885-1327",
+    "website": "https://mcg.wrdsb.ca/",
+    "alpha_code": "MCG",
+    "school_type_code": "Elem",
+    "mident": "327930",
+    "principal": "Erica Fleming-Gillespie",
+    "vice_principals": [
+        "ENNS, DANIEL P",
+        "Karen Moore",
+        "Karen Moore"
+    ],
+    "id": "mcg",
+    "_rid": "0EZCAOpzAQBYAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQBYAAAAAAAAAA==/",
+    "_etag": "\"0f006c47-0000-0000-0000-593723bb0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496785851
+}

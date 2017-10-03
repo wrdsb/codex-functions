@@ -1,0 +1,25 @@
+{
+    "full_name": "Bridgeport Public School",
+    "abbreviated_name": "Bridgeport",
+    "street_address": "59 Bridge St. W.",
+    "city": "Kitchener",
+    "province": "ON",
+    "postal_code": "N2K 1K6",
+    "phone": "519-743-4318",
+    "fax": "519-743-4774",
+    "website": "https://brp.wrdsb.ca/",
+    "alpha_code": "BRP",
+    "school_type_code": "Elem",
+    "mident": "061697",
+    "principal": "Stephen Sherlock",
+    "vice_principals": [
+        "MOEN, BRENDA"
+    ],
+    "id": "brp",
+    "_rid": "0EZCAOpzAQASAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQASAAAAAAAAAA==/",
+    "_etag": "\"0f009e46-0000-0000-0000-593720620000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496784993
+}

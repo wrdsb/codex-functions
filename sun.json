@@ -1,0 +1,27 @@
+{
+    "full_name": "Sunnyside Senior Public School",
+    "abbreviated_name": "Sunnyside",
+    "street_address": "1042 Weber St. E.",
+    "city": "Kitchener",
+    "province": "ON",
+    "postal_code": "N2A 1B6",
+    "phone": "519-896-1130",
+    "fax": "519-896-0343",
+    "website": "https://sun.wrdsb.ca/",
+    "alpha_code": "SUN",
+    "school_type_code": "Elem",
+    "mident": "543730",
+    "principal": "Jeff Lovell",
+    "vice_principals": [
+        "PULLEN, LEAH KATHRYN",
+        "Devrim Sherifali",
+        "Devrim Sherifali"
+    ],
+    "id": "sun",
+    "_rid": "0EZCAOpzAQCVAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQCVAAAAAAAAAA==/",
+    "_etag": "\"0f008147-0000-0000-0000-593723bc0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496785851
+}

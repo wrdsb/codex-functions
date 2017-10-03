@@ -1,0 +1,27 @@
+{
+    "full_name": "Southridge Public School",
+    "abbreviated_name": "Southridge",
+    "street_address": "1425 Queen's Blvd.",
+    "city": "Kitchener",
+    "province": "ON",
+    "postal_code": "N2M 5B3",
+    "phone": "519-576-0940",
+    "fax": "519-576-1059",
+    "website": "https://srg.wrdsb.ca/",
+    "alpha_code": "SRG",
+    "school_type_code": "Elem",
+    "mident": "524751",
+    "principal": "Geoff Suderman-Gladwell",
+    "vice_principals": [
+        "FORMAN, HEATHER DAWN",
+        "Leah Pullen",
+        "Leah Pullen"
+    ],
+    "id": "srg",
+    "_rid": "0EZCAOpzAQCCAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQCCAAAAAAAAAA==/",
+    "_etag": "\"0f005347-0000-0000-0000-593723ba0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496785850
+}

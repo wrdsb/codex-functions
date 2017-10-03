@@ -1,0 +1,15 @@
+{
+    "id": "edc-mac-2",
+    "etags": "eqO3c9wtJJ4wVWz2xe0E9HiU_D0/GL1Z2_pQTfOvU43Dg_QWPKTGEpI",
+    "kind": "admin#directory#resources#calendars#CalendarResource",
+    "resourceDescription": "Education Centre, Building 2, Floor 2",
+    "resourceEmail": "googleapps.wrdsb.ca_6564632d6d61632d32@resource.calendar.google.com",
+    "resourceId": "edc-mac-2",
+    "resourceName": "Mac CATC Lab",
+    "resourceType": "Meeting Room",
+    "_rid": "0EZCAIzWlgAHAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAIzWlgA=/docs/0EZCAIzWlgAHAAAAAAAAAA==/",
+    "_etag": "\"00008d00-0000-0000-0000-593ed6760000\"",
+    "_attachments": "attachments/",
+    "_ts": 1497290350
+}

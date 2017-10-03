@@ -1,0 +1,31 @@
+{
+    "full_name": "Waterloo-Oxford District Secondary School",
+    "abbreviated_name": "WODSS",
+    "street_address": "1206 Snyder's Rd. W.",
+    "city": "Baden",
+    "province": "ON",
+    "postal_code": "N3A 1A4",
+    "phone": "519-634-5441",
+    "fax": "519-634-5469",
+    "website": "https://wod.wrdsb.ca/",
+    "alpha_code": "WOD",
+    "school_type_code": "Sec",
+    "mident": "951048",
+    "principal": "Beth Bodkin",
+    "vice_principals": [
+        "KOLB, HEIDI J",
+        "John Craig",
+        "Carolyn Salonen",
+        "John Craig",
+        "Carolyn Salonen"
+    ],
+    "id": "wod",
+    "_rid": "0EZCAOpzAQCfAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQCfAAAAAAAAAA==/",
+    "_etag": "\"0f007647-0000-0000-0000-593723bc0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "staff_calendar_id": "v28jnh5kug3naaln9f0qq7t4g0@group.calendar.google.com",
+    "public_calendar_id": "0k4nujb8rr6so02usmikcq1mic@group.calendar.google.com",
+    "_ts": 1496785851
+}

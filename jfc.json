@@ -1,0 +1,27 @@
+{
+    "full_name": "J. F. Carmichael Public School",
+    "abbreviated_name": "J. F. Carmichael",
+    "street_address": "80 Patricia Ave.",
+    "city": "Kitchener",
+    "province": "ON",
+    "postal_code": "N2M 1J3",
+    "phone": "519-578-8450",
+    "fax": "519-578-5800",
+    "website": "https://jfc.wrdsb.ca/",
+    "alpha_code": "JFC",
+    "school_type_code": "Elem",
+    "mident": "279595",
+    "principal": "Carole Reeves",
+    "vice_principals": [
+        "BINGEMAN, KIM ANN",
+        "Bobbie-Jo Lovell",
+        "Bobbie-Jo Lovell"
+    ],
+    "id": "jfc",
+    "_rid": "0EZCAOpzAQBEAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQBEAAAAAAAAAA==/",
+    "_etag": "\"0f004c47-0000-0000-0000-593723ba0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496785849
+}

@@ -1,0 +1,27 @@
+{
+    "full_name": "Country Hills Public School",
+    "abbreviated_name": "Country Hills",
+    "street_address": "195 Country Hill Dr.",
+    "city": "Kitchener",
+    "province": "ON",
+    "postal_code": "N2E 2G7",
+    "phone": "519-743-6331",
+    "fax": "519-743-4265",
+    "website": "https://coh.wrdsb.ca/",
+    "alpha_code": "COH",
+    "school_type_code": "Elem",
+    "mident": "125555",
+    "principal": "Marc Lehmann",
+    "vice_principals": [
+        "PEEBLES, LORI RENEE",
+        "Jeff Bumstead",
+        "Jeff Bumstead"
+    ],
+    "id": "coh",
+    "_rid": "0EZCAOpzAQAhAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQAhAAAAAAAAAA==/",
+    "_etag": "\"0f002547-0000-0000-0000-593723b90000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496785849
+}

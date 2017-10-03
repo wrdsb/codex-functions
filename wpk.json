@@ -1,0 +1,25 @@
+{
+    "full_name": "Woodland Park Public School",
+    "abbreviated_name": "Woodland Park",
+    "street_address": "555 Ellis Rd.",
+    "city": "Cambridge",
+    "province": "ON",
+    "postal_code": "N3C 4K2",
+    "phone": "519-654-9402",
+    "fax": "519-654-9354",
+    "website": "https://wpk.wrdsb.ca/",
+    "alpha_code": "WPK",
+    "school_type_code": "Elem",
+    "mident": "618810",
+    "principal": "Paul Schlegel",
+    "vice_principals": [
+        "MCLEMAN, CRAIG"
+    ],
+    "id": "wpk",
+    "_rid": "0EZCAOpzAQCqAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQCqAAAAAAAAAA==/",
+    "_etag": "\"0f007f46-0000-0000-0000-593720610000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496784992
+}

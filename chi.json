@@ -1,0 +1,19 @@
+{
+    "full_name": "Chicopee Hills Public School",
+    "abbreviated_name": "Chicopee Hills",
+    "street_address": "800 Fairway Road North",
+    "city": "Kitchener",
+    "province": "ON",
+    "postal_code": "N2A 0J6",
+    "phone": "",
+    "fax": "",
+    "website": "https://chi.wrdsb.ca/",
+    "alpha_code": "CHI",
+    "id": "chi",
+    "is_active": true,
+    "_rid": "0EZCAOpzAQCuAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQCuAAAAAAAAAA==/",
+    "_etag": "\"0000200e-0000-0000-0000-598cb8720000\"",
+    "_attachments": "attachments/",
+    "_ts": 1502394461
+}

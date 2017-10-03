@@ -1,0 +1,25 @@
+{
+    "full_name": "Linwood Public School",
+    "abbreviated_name": "Linwood",
+    "street_address": "50 Pine St.",
+    "city": "Linwood",
+    "province": "ON",
+    "postal_code": "N0B 2A0",
+    "phone": "519-698-2680",
+    "fax": "519-621-5621",
+    "website": "https://lin.wrdsb.ca/",
+    "alpha_code": "LIN",
+    "school_type_code": "Elem",
+    "mident": "314331",
+    "principal": "Shawn Thompson",
+    "vice_principals": [
+        "MARCHIORI, SUSAN"
+    ],
+    "id": "lin",
+    "_rid": "0EZCAOpzAQBVAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQBVAAAAAAAAAA==/",
+    "_etag": "\"0f009846-0000-0000-0000-593720610000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496784993
+}

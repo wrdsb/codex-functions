@@ -1,0 +1,27 @@
+{
+    "full_name": "Manchester Public School",
+    "abbreviated_name": "Manchester",
+    "street_address": "455 Dundas St. N.",
+    "city": "Cambridge",
+    "province": "ON",
+    "postal_code": "N1R 5R5",
+    "phone": "519-621-8240",
+    "fax": "519-621-3233",
+    "website": "https://man.wrdsb.ca/",
+    "alpha_code": "MAN",
+    "school_type_code": "Elem",
+    "mident": "331708",
+    "principal": "Heather Kruis",
+    "vice_principals": [
+        "MCLEMAN, CRAIG",
+        "Craig McLeman",
+        "Craig McLeman"
+    ],
+    "id": "man",
+    "_rid": "0EZCAOpzAQBcAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQBcAAAAAAAAAA==/",
+    "_etag": "\"0f007147-0000-0000-0000-593723bb0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496785851
+}

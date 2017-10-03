@@ -1,0 +1,25 @@
+{
+    "full_name": "Rosemount School",
+    "abbreviated_name": "Rosemount",
+    "street_address": "80 Burlington Dr.",
+    "city": "Kitchener",
+    "province": "ON",
+    "postal_code": "N2B 1T5",
+    "phone": "519-576-6870",
+    "fax": "519-576-7060",
+    "website": "https://rmt.wrdsb.ca/",
+    "alpha_code": "RMT",
+    "school_type_code": "Elem",
+    "mident": "677477",
+    "principal": "Cindy Smith",
+    "vice_principals": [
+        "SMITH, CYNTHIA D"
+    ],
+    "id": "rmt",
+    "_rid": "0EZCAOpzAQB3AAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQB3AAAAAAAAAA==/",
+    "_etag": "\"0f009646-0000-0000-0000-593720610000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496784993
+}

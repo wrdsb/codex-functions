@@ -1,0 +1,25 @@
+{
+    "full_name": "Northlake Woods Public School",
+    "abbreviated_name": "Northlake Woods",
+    "street_address": "500 Northlake Dr.",
+    "city": "Waterloo",
+    "province": "ON",
+    "postal_code": "N2V 2A4",
+    "phone": "519-885-1115",
+    "fax": "519-885-2890",
+    "website": "https://nlw.wrdsb.ca/",
+    "alpha_code": "NLW",
+    "school_type_code": "Elem",
+    "mident": "383422",
+    "principal": "Dave Glebe",
+    "vice_principals": [
+        "GLEBE, DAVID WILLIAM"
+    ],
+    "id": "nlw",
+    "_rid": "0EZCAOpzAQBpAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQBpAAAAAAAAAA==/",
+    "_etag": "\"0f005546-0000-0000-0000-5937205f0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496784990
+}

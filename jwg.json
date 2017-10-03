@@ -1,0 +1,25 @@
+{
+    "full_name": "J. W. Gerth Public School",
+    "abbreviated_name": "J. W. Gerth",
+    "street_address": "171 Apple Ridge Dr.",
+    "city": "Kitchener",
+    "province": "ON",
+    "postal_code": "N2P 0A1",
+    "phone": "519-896-4159",
+    "fax": "519-896-4780",
+    "website": "https://jwg.wrdsb.ca/",
+    "alpha_code": "JWG",
+    "school_type_code": "Elem",
+    "mident": "486336",
+    "principal": "Susan Schaffner",
+    "vice_principals": [
+        "DAVIDSON, SHERRI LEE"
+    ],
+    "id": "jwg",
+    "_rid": "0EZCAOpzAQBFAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQBFAAAAAAAAAA==/",
+    "_etag": "\"0f008346-0000-0000-0000-593720610000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496784992
+}

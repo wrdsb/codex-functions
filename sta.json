@@ -1,0 +1,27 @@
+{
+    "full_name": "St  Andrew's Senior Public School",
+    "abbreviated_name": "St. Andrew's",
+    "street_address": "65 Victoria Ave.",
+    "city": "Cambridge",
+    "province": "ON",
+    "postal_code": "N1S 1X2",
+    "phone": "519-621-7170",
+    "fax": "519-621-4611",
+    "website": "https://sta.wrdsb.ca/",
+    "alpha_code": "STA",
+    "school_type_code": "Elem",
+    "mident": "528781",
+    "principal": "Tatania Stroud",
+    "vice_principals": [
+        "WEBSTER, CHRISTINA",
+        "Amanda Matessich",
+        "Amanda Matessich"
+    ],
+    "id": "sta",
+    "_rid": "0EZCAOpzAQCEAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQCEAAAAAAAAAA==/",
+    "_etag": "\"0f006f47-0000-0000-0000-593723bb0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496785851
+}

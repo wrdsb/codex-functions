@@ -1,0 +1,27 @@
+{
+    "full_name": "Laurentian Senior Public School",
+    "abbreviated_name": "Laurentian",
+    "street_address": "777 Westmount Rd. E.",
+    "city": "Kitchener",
+    "province": "ON",
+    "postal_code": "N2E 1J2",
+    "phone": "519-578-6160",
+    "fax": "519-578-6180",
+    "website": "https://lau.wrdsb.ca/",
+    "alpha_code": "LAU",
+    "school_type_code": "Elem",
+    "mident": "309320",
+    "principal": "Gregory Jespersen",
+    "vice_principals": [
+        "STERE, JASON G",
+        "Lisa Devall-Martin",
+        "Lisa Devall-Martin"
+    ],
+    "id": "lau",
+    "_rid": "0EZCAOpzAQBQAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQBQAAAAAAAAAA==/",
+    "_etag": "\"0f002347-0000-0000-0000-593723b90000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496785849
+}

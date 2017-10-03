@@ -1,0 +1,27 @@
+{
+    "full_name": "Centennial Public School (Waterloo)",
+    "abbreviated_name": "Centennial Waterloo",
+    "street_address": "141 Amos Ave.",
+    "city": "Waterloo",
+    "province": "ON",
+    "postal_code": "N2L 2W8",
+    "phone": "519-885-5660",
+    "fax": "519-885-5526",
+    "website": "https://cnw.wrdsb.ca/",
+    "alpha_code": "CNW",
+    "school_type_code": "Elem",
+    "mident": "090220",
+    "principal": "Betti Adams",
+    "vice_principals": [
+        "WEIGEL, BRIAN DAVID",
+        "Vinay Tiwari",
+        "Vinay Tiwari"
+    ],
+    "id": "cnw",
+    "_rid": "0EZCAOpzAQAaAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQAaAAAAAAAAAA==/",
+    "_etag": "\"0f006047-0000-0000-0000-593723bb0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496785851
+}

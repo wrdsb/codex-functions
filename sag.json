@@ -1,0 +1,25 @@
+{
+    "full_name": "Saginaw Public School",
+    "abbreviated_name": "Saginaw",
+    "street_address": "740 Saginaw Pkwy.",
+    "city": "Cambridge",
+    "province": "ON",
+    "postal_code": "N1T 1V6",
+    "phone": "519-624-7111",
+    "fax": "519-624-6599",
+    "website": "https://sag.wrdsb.ca/",
+    "alpha_code": "SAG",
+    "school_type_code": "Elem",
+    "mident": "496685",
+    "principal": "Erin Bell",
+    "vice_principals": [
+        "SCHMID, MICHELLE L"
+    ],
+    "id": "sag",
+    "_rid": "0EZCAOpzAQB5AAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQB5AAAAAAAAAA==/",
+    "_etag": "\"0f003a46-0000-0000-0000-5937205f0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496784990
+}

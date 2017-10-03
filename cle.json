@@ -1,0 +1,27 @@
+{
+    "full_name": "Clemens Mill Public School",
+    "abbreviated_name": "Clemens Mill",
+    "street_address": "335 Saginaw Pky.",
+    "city": "Cambridge",
+    "province": "ON",
+    "postal_code": "N1T 1R6",
+    "phone": "519-740-2364",
+    "fax": "519-740-3863",
+    "website": "https://cle.wrdsb.ca/",
+    "alpha_code": "CLE",
+    "school_type_code": "Elem",
+    "mident": "108693",
+    "principal": "Carolyn Graham",
+    "vice_principals": [
+        "STEWART, BEVERLIE CHARLOTTE",
+        "Krista Mohr Beamish",
+        "Krista Mohr Beamish"
+    ],
+    "id": "cle",
+    "_rid": "0EZCAOpzAQAdAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQAdAAAAAAAAAA==/",
+    "_etag": "\"0f005047-0000-0000-0000-593723ba0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496785850
+}

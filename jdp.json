@@ -1,0 +1,23 @@
+{
+    "full_name": "John Darling Public School",
+    "abbreviated_name": "John Darling",
+    "street_address": "200 Rolling Meadows Dr.",
+    "city": "Kitchener",
+    "province": "ON",
+    "postal_code": "N2N 3G9",
+    "phone": "519-749-0834",
+    "fax": "519-749-0225",
+    "website": "https://jdp.wrdsb.ca/",
+    "alpha_code": "JDP",
+    "school_type_code": "Elem",
+    "mident": "285536",
+    "principal": "Holly Smith",
+    "vice_principals": [],
+    "id": "jdp",
+    "_rid": "0EZCAOpzAQBIAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQBIAAAAAAAAAA==/",
+    "_etag": "\"0f00a346-0000-0000-0000-593720620000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496784993
+}

@@ -1,0 +1,25 @@
+{
+    "full_name": "Westvale Public School",
+    "abbreviated_name": "Westvale",
+    "street_address": "265 Westvale Dr.",
+    "city": "Waterloo",
+    "province": "ON",
+    "postal_code": "N2T 2B2",
+    "phone": "519-746-6724",
+    "fax": "519-746-1965",
+    "website": "https://wsv.wrdsb.ca/",
+    "alpha_code": "WSV",
+    "school_type_code": "Elem",
+    "mident": "602906",
+    "principal": "Jodie Hancox-Meyer",
+    "vice_principals": [
+        "MILNE, PAUL"
+    ],
+    "id": "wsv",
+    "_rid": "0EZCAOpzAQCjAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQCjAAAAAAAAAA==/",
+    "_etag": "\"0f005c46-0000-0000-0000-5937205f0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496784991
+}

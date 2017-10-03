@@ -1,0 +1,23 @@
+{
+    "full_name": "Park Manor Senior Public School",
+    "abbreviated_name": "Park Manor",
+    "street_address": "18 Mockingbird Dr.",
+    "city": "Elmira",
+    "province": "ON",
+    "postal_code": "N3B 1T1",
+    "phone": "519-669-5183",
+    "fax": "519-669-5185",
+    "website": "https://pkm.wrdsb.ca/",
+    "alpha_code": "PKM",
+    "school_type_code": "Elem",
+    "mident": "433799",
+    "principal": "Sharlene McHolm",
+    "vice_principals": [],
+    "id": "pkm",
+    "_rid": "0EZCAOpzAQBsAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQBsAAAAAAAAAA==/",
+    "_etag": "\"0f007046-0000-0000-0000-593720600000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496784992
+}

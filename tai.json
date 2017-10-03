@@ -1,0 +1,27 @@
+{
+    "full_name": "Tait Street Public School",
+    "abbreviated_name": "Tait Street",
+    "street_address": "184 Tait St.",
+    "city": "Cambridge",
+    "province": "ON",
+    "postal_code": "N1S 3G3",
+    "phone": "519-621-7621",
+    "fax": "519-621-7331",
+    "website": "https://tai.wrdsb.ca/",
+    "alpha_code": "TAI",
+    "school_type_code": "Elem",
+    "mident": "547506",
+    "principal": "James Bond",
+    "vice_principals": [
+        "KRUIS, HEATHER",
+        "Jenni Guy",
+        "Jenni Guy"
+    ],
+    "id": "tai",
+    "_rid": "0EZCAOpzAQCWAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQCWAAAAAAAAAA==/",
+    "_etag": "\"0f003a47-0000-0000-0000-593723b90000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496785849
+}

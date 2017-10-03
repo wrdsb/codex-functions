@@ -1,0 +1,27 @@
+{
+    "full_name": "Lester B. Pearson Public School",
+    "abbreviated_name": "Lester B. Pearson",
+    "street_address": "520 Chesapeake Dr.",
+    "city": "Waterloo",
+    "province": "ON",
+    "postal_code": "N2K 4G5",
+    "phone": "519-880-0300",
+    "fax": "519-880-0822",
+    "website": "https://lbp.wrdsb.ca/",
+    "alpha_code": "LBP",
+    "school_type_code": "Elem",
+    "mident": "311731",
+    "principal": "Brenda Moen",
+    "vice_principals": [
+        "REEVES, CAROLE",
+        "Shawn Darby",
+        "Shawn Darby"
+    ],
+    "id": "lbp",
+    "_rid": "0EZCAOpzAQBRAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQBRAAAAAAAAAA==/",
+    "_etag": "\"0f002647-0000-0000-0000-593723b90000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496785849
+}

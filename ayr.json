@@ -1,0 +1,23 @@
+{
+    "full_name": "Ayr Public School",
+    "abbreviated_name": "Ayr",
+    "street_address": "105 Hall St.",
+    "city": "Ayr",
+    "province": "ON",
+    "postal_code": "N0B 1E0",
+    "phone": "519-632-7424",
+    "fax": "519-632-8656",
+    "website": "https://ayr.wrdsb.ca/",
+    "alpha_code": "AYR",
+    "school_type_code": "Elem",
+    "mident": "029459",
+    "principal": "Mike Coates",
+    "vice_principals": [],
+    "id": "ayr",
+    "_rid": "0EZCAOpzAQALAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQALAAAAAAAAAA==/",
+    "_etag": "\"0f004d46-0000-0000-0000-5937205f0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496784990
+}

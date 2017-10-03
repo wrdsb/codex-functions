@@ -1,0 +1,27 @@
+{
+    "full_name": "Empire Public School",
+    "abbreviated_name": "Empire",
+    "street_address": "83 Empire St.",
+    "city": "Waterloo",
+    "province": "ON",
+    "postal_code": "N2L 2M1",
+    "phone": "519-742-8375",
+    "fax": "519-742-8376",
+    "website": "https://emp.wrdsb.ca/",
+    "alpha_code": "EMP",
+    "school_type_code": "Elem",
+    "mident": "181030",
+    "principal": "Kelly Wilkinson",
+    "vice_principals": [
+        "ENNS, DANIEL P",
+        "Karen Moore",
+        "Karen Moore"
+    ],
+    "id": "emp",
+    "_rid": "0EZCAOpzAQAuAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQAuAAAAAAAAAA==/",
+    "_etag": "\"0f007547-0000-0000-0000-593723bc0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496785851
+}

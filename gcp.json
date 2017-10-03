@@ -1,0 +1,27 @@
+{
+    "full_name": "Glencairn Public School",
+    "abbreviated_name": "Glencairn",
+    "street_address": "664 Erinbrook Dr.",
+    "city": "Kitchener",
+    "province": "ON",
+    "postal_code": "N2E 2R1",
+    "phone": "519-742-0849",
+    "fax": "519-742-0808",
+    "website": "https://gcp.wrdsb.ca/",
+    "alpha_code": "GCP",
+    "school_type_code": "Elem",
+    "mident": "217891",
+    "principal": "Heather Preddie",
+    "vice_principals": [
+        "SMITH, HOLLY ANNE",
+        "William Grobe",
+        "William Grobe"
+    ],
+    "id": "gcp",
+    "_rid": "0EZCAOpzAQA1AAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQA1AAAAAAAAAA==/",
+    "_etag": "\"0f003947-0000-0000-0000-593723b90000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496785849
+}

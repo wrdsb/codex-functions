@@ -1,0 +1,25 @@
+{
+    "full_name": "Abraham Erb Public School",
+    "abbreviated_name": "Abraham Erb",
+    "street_address": "710 Laurelwood Dr.",
+    "city": "Waterloo",
+    "province": "ON",
+    "postal_code": "N2V 2V3",
+    "phone": "519-747-7694",
+    "fax": "519-746-4428",
+    "website": "https://abe.wrdsb.ca/",
+    "alpha_code": "ABE",
+    "school_type_code": "Elem",
+    "mident": "000671",
+    "principal": "Heather Schumann",
+    "vice_principals": [
+        "HUGHES, BRADLEY JAMES"
+    ],
+    "id": "abe",
+    "_rid": "0EZCAOpzAQACAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQACAAAAAAAAAA==/",
+    "_etag": "\"0f00a046-0000-0000-0000-593720620000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496784993
+}

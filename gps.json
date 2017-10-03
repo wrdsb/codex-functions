@@ -1,0 +1,31 @@
+{
+    "full_name": "Glenview Park Secondary School",
+    "abbreviated_name": "GPSS",
+    "street_address": "55 McKay St.",
+    "city": "Cambridge",
+    "province": "ON",
+    "postal_code": "N1R 4G8",
+    "phone": "519-621-9510",
+    "fax": "519-621-5860",
+    "website": "https://gps.wrdsb.ca/",
+    "alpha_code": "GPS",
+    "school_type_code": "Sec",
+    "mident": "913340",
+    "principal": "David Wilson",
+    "vice_principals": [
+        "REIST, STEPHAN R",
+        "Robert Dickson",
+        "Christie Wynn",
+        "Robert Dickson",
+        "Christie Wynn"
+    ],
+    "id": "gps",
+    "_rid": "0EZCAOpzAQA2AAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQA2AAAAAAAAAA==/",
+    "_etag": "\"0f007747-0000-0000-0000-593723bc0000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "staff_calendar_id": "cdciffdtmjcu68ctva9fvqg6u4@group.calendar.google.com",
+    "public_calendar_id": "jpl0r5j1lmfk1fp0nmko1foo2c@group.calendar.google.com",
+    "_ts": 1496785851
+}

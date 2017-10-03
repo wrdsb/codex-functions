@@ -1,0 +1,27 @@
+{
+    "full_name": "Wellesley Public School",
+    "abbreviated_name": "Wellesley",
+    "street_address": "1059 Queen's Bush Rd.",
+    "city": "Wellesley",
+    "province": "ON",
+    "postal_code": "N0B 2T0",
+    "phone": "519-656-2830",
+    "fax": "519-656-3371",
+    "website": "https://wel.wrdsb.ca/",
+    "alpha_code": "WEL",
+    "school_type_code": "Elem",
+    "mident": "591955",
+    "principal": "MORGAN, BRIAN",
+    "vice_principals": [
+        "BEDDOE, ANDREW",
+        "Andrew Beddoe",
+        "Andrew Beddoe"
+    ],
+    "id": "wel",
+    "_rid": "0EZCAOpzAQCgAAAAAAAAAA==",
+    "_self": "dbs/0EZCAA==/colls/0EZCAOpzAQA=/docs/0EZCAOpzAQCgAAAAAAAAAA==/",
+    "_etag": "\"0f001b47-0000-0000-0000-593723b90000\"",
+    "_attachments": "attachments/",
+    "is_active": true,
+    "_ts": 1496785849
+}

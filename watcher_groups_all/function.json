@@ -1,0 +1,20 @@
+{
+  "bindings": [
+    {
+      "name": "groupsAll",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "groups/groups.all.json",
+      "connection": "wrdsbcodex_STORAGE"
+    },
+    {
+      "name" : "groupsToRead",
+      "type" : "serviceBus",
+      "queueName" : "groups_to_read",
+      "connection" : "wrdsb-igor_SERVICEBUS",
+      "accessRights" : "manage",
+      "direction" : "out"
+    }
+  ],
+  "disabled": false
+}

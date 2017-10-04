@@ -12,19 +12,21 @@ module.exports = function (context) {
             group: group
         };
 
-        scheduledTime = moment().utc().add(offset, 'minute').format('M/D/YYYY H:mm:ss A');
+        //scheduledTime = moment().utc().add(offset, 'minute').format('M/D/YYYY H:mm:ss A');
         
-        var message = {
-            body: messageBody,
-            brokerProperties: {
-                ScheduledEnqueueTimeUtc: scheduledTime
-            }
-        };
+        //var message = {
+            //body: messageBody,
+            //brokerProperties: {
+                //ScheduledEnqueueTimeUtc: scheduledTime
+            //}
+        //};
 
-        context.log('Requesting refresh of '+ group +' at '+ scheduledTime +' UTC.');
-        groups_to_read.push(JSON.stringify(message));
+        //context.log('Requesting refresh of '+ group +' at '+ scheduledTime +' UTC.');
+        //groups_to_read.push(JSON.stringify(message));
 
-        offset = offset + 0.1;
+        //offset = offset + 0.1;
+        context.log('Requesting refresh of '+ group);
+        groups_to_read.push(messageBody);
     });
     context.bindings.groupsToRead = groups_to_read;
     context.done();

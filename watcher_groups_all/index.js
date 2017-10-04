@@ -9,7 +9,7 @@ module.exports = function (context) {
 
     Object.getOwnPropertyNames(groups_all).forEach(function (group) {
         var messageBody = {
-            groupKey: group
+            group: group
         };
 
         scheduledTime = moment().utc().add(offset, 'minute').format('M/D/YYYY H:mm:ss A');

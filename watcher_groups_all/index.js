@@ -15,14 +15,14 @@ module.exports = function (context) {
         scheduledTime = moment().utc().add(offset, 'minute').format('M/D/YYYY H:mm:ss A');
         
         var message = {
-            body: JSON.stringify(messageBody),
+            body: messageBody,
             brokerProperties: {
                 ScheduledEnqueueTimeUtc: scheduledTime
             }
         };
 
         context.log('Requesting refresh of '+ group +' at '+ scheduledTime +' UTC.');
-        groups_to_read.push(message);
+        groups_to_read.push(JSON.stringify(message));
 
         offset = offset + 0.1;
     });

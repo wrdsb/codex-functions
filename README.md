@@ -1,2 +1,2 @@
-# codex-functions
+# Codex Functions
 Azure Functions for Codex.

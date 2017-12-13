@@ -4,7 +4,7 @@ module.exports = function (context, data) {
     // Fail if data does not include email
 
     // Get the current record from Codex
-    var current_record = context.bindings.codexGroup;
+    var current_record = context.bindings.codexGroupIn;
     context.log(current_record);
 
     // We use the Group's email address as the Cosmos DB record's id
@@ -16,8 +16,11 @@ module.exports = function (context, data) {
         data.id = data.email;
     }
     
-    // Merge request object into current record and save
-    context.bindings.codexGroup = Object.assign(current_record, data);
+    // Merge request object into current record
+    var merged_record = Object.assign(current_record, data);
+    context.log(merged_record);
+
+    context.bindings.codexGroupOut = merged_record;
 
     context.done();
 };

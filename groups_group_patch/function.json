@@ -12,7 +12,7 @@
       "databaseName": "wrdsb-codex",
       "collectionName": "groups-groups",
       "id" : "{email}",
-      "connection": "MyAccount_COSMOSDB",     
+      "connection": "wrdsb-codex_DOCUMENTDB",     
       "direction": "in"
     },
     {

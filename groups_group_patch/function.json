@@ -7,6 +7,15 @@
       "direction": "in"
     },
     {
+      "name": "codexGroup",
+      "type": "documentDB",
+      "databaseName": "wrdsb-codex",
+      "collectionName": "groups-groups",
+      "id" : "{email}",
+      "connection": "MyAccount_COSMOSDB",     
+      "direction": "in"
+    },
+    {
       "name": "res",
       "type": "http",
       "direction": "out"

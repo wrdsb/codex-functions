@@ -1,0 +1,34 @@
+{
+  "bindings": [
+    {
+      "name": "req",
+      "type": "httpTrigger",
+      "webHookType": "genericJson",
+      "direction": "in"
+    },
+    {
+      "name": "codexGroupIn",
+      "type": "documentDB",
+      "databaseName": "wrdsb-codex",
+      "collectionName": "groups-groups",
+      "id" : "{email}",
+      "connection": "wrdsb-codex_DOCUMENTDB",     
+      "direction": "in"
+    },
+    {
+      "name": "codexGroupOut",
+      "type": "documentDB",
+      "databaseName": "wrdsb-codex",
+      "collectionName": "groups-groups",
+      "createIfNotExists": true,
+      "connection": "wrdsb-codex_DOCUMENTDB",     
+      "direction": "out"
+    },
+    {
+      "name": "res",
+      "type": "http",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}

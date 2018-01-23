@@ -3,5 +3,6 @@ Adds a category to a Google Groups Group record.
 
 ## Request
 HTTP POST
+{"id":"abe-easyconnect@wrdsb.ca", "category":"abc-easyconnect"}
 
 ## Response

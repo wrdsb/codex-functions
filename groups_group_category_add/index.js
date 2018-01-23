@@ -16,9 +16,16 @@ module.exports = function (context, data) {
 
         // Get current record's categories
         current_categories = current_record.categories;
-    
-        // Add new category
-        updated_categories = current_categories.push(data.category);
+
+        if (current_categories && Array.isArray(current_categories)) {
+            if (current_categories.indexOf(data.category) === -1) {
+                updated_categories = current_categories.push(data.category);
+            } else {
+                updated_categories = current_categories;
+            }
+        } else {
+            updated_categories = [data.category];
+        }
         
         // Merge categories array back into current record
         current_record.categories = updated_categories;

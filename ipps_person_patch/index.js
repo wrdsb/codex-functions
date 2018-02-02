@@ -1,6 +1,7 @@
 module.exports = function (context, data) {
     var execution_timestamp = (new Date()).toJSON();  // format: 2012-04-23T18:25:43.511Z
     var skyline_message;
+
     var old_codex_record;
     var new_codex_record_values;
     var new_codex_record;

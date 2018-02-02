@@ -37,7 +37,7 @@ module.exports = function (context, data) {
         },
         timestamp: execution_timestamp
     };
-    context.bindings.skylineEventHubMessage = JSON.stringify(skyline_message);
+    context.bindings.functionExecutionMessage = JSON.stringify(skyline_message);
     context.res = {
         status: 200,
         body: skyline_message

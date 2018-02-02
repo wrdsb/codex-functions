@@ -21,7 +21,7 @@ module.exports = function (context, data) {
     context.bindings.codexIPPSPersonOut = new_codex_record;
 
     skyline_message = {
-        service: 'codex',
+        app: 'codex-functions',
         operation: 'ipps_person_replace',
         function_name: context.executionContext.functionName,
         invocation_id: context.executionContext.invocationId,

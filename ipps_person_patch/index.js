@@ -19,6 +19,7 @@ module.exports = function (context, data) {
         // Merge request object into current record
         new_codex_record = Object.assign(old_codex_record, new_codex_record_values);
     } else {
+        old_codex_record = {};
         new_codex_record = new_codex_record_values;
     }
 

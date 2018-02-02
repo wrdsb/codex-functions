@@ -7,6 +7,8 @@ module.exports = function (context, data) {
     old_codex_record = context.bindings.codexIPPSPersonIn;
     new_codex_record = data;
 
+    if (!old_codex_record) { old_codex_record = {}; }
+
     // TODO: Fail if data does not include ein
 
     // We use the Person's EIN as the Cosmos DB record's id

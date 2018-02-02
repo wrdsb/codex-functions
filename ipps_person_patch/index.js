@@ -1,29 +1,45 @@
 module.exports = function (context, data) {
-    var current_record;
-    var merged_record;
+    var execution_timestamp = (new Date()).toJSON();  // format: 2012-04-23T18:25:43.511Z
+    var skyline_record;
+    var old_codex_record;
+    var new_codex_record_values;
+    var new_codex_record;
 
-    context.log(data);
+    old_codex_record = context.bindings.codexIPPSPersonIn;
+    new_codex_record_values = data;
 
     // TODO: Fail if data does not include ein
 
     // We use the Person's ein as the Cosmos DB record's id
-    if (data.ein) {
-        data.id = data.ein;
+    if (new_codex_record_values.ein) {
+        new_codex_record_values.id = new_codex_record_values.ein;
     }
-    
-    // Get the current record from Codex
-    current_record = context.bindings.codexIPPSPersonIn;
-    context.log(current_record);
 
-    if (current_record) {
+    if (old_codex_record) {
         // Merge request object into current record
-        merged_record = Object.assign(current_record, data);
+        new_codex_record = Object.assign(old_codex_record, new_codex_record_values);
     } else {
-        merged_record = data;
+        new_codex_record = new_codex_record_values;
     }
-    context.log(merged_record);
 
-    context.bindings.codexIPPSPersonOut = merged_record;
+    context.bindings.codexIPPSPersonOut = new_codex_record;
 
-    context.done();
+    skyline_record = {
+        service: 'codex',
+        operation: 'ipps_person_patch',
+        function_name: context.executionContext.functionName,
+        invocation_id: context.executionContext.invocationId,
+        data: {
+            old_record: old_codex_record,
+            new_record: new_codex_record
+        },
+        timestamp: execution_timestamp
+    };
+
+    context.res = {
+        status: 200,
+        body: skyline_record
+    };
+
+    context.done(null, JSON.stringify(skyline_record));
 };

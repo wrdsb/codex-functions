@@ -1,4 +1,5 @@
 module.exports = function (context, data) {
+    var new_category = data.category;
     var current_record;
     var current_categories;
     var updated_categories;
@@ -18,13 +19,14 @@ module.exports = function (context, data) {
         current_categories = current_record.categories;
 
         if (current_categories && Array.isArray(current_categories)) {
-            if (current_categories.indexOf(data.category) === -1) {
-                updated_categories = current_categories.push(data.category);
+            if (current_categories.indexOf(new_category) === -1) {
+                updated_categories = current_categories;
+                updated_categories.push(new_category);
             } else {
                 updated_categories = current_categories;
             }
         } else {
-            updated_categories = [data.category];
+            updated_categories = [new_category];
         }
         
         // Merge categories array back into current record

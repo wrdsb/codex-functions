@@ -27,7 +27,8 @@ module.exports = function (context, data) {
     context.bindings.codexIPPSPersonOut = new_codex_record;
 
     skyline_message = {
-        app: 'codex-functions',
+        event_type: 'function_invocation',
+        app: 'wrdsb-codex',
         operation: 'ipps_person_patch',
         function_name: context.executionContext.functionName,
         invocation_id: context.executionContext.invocationId,
@@ -37,7 +38,7 @@ module.exports = function (context, data) {
         },
         timestamp: execution_timestamp
     };
-    context.bindings.functionExecutionMessage = JSON.stringify(skyline_message);
+    context.bindings.skylineEvents = JSON.stringify(skyline_message);
     context.res = {
         status: 200,
         body: skyline_message

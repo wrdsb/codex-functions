@@ -25,9 +25,9 @@
       "direction": "out"
     },
     {
-      "name": "functionExecutionMessage",
+      "name": "skylineEvents",
       "type": "eventHub",
-      "path": "function-executions",
+      "path": "events",
       "connection": "wrdsb-skyline_EVENTHUB",
       "direction": "out"
     },

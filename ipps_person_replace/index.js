@@ -33,6 +33,6 @@ module.exports = function (context, data) {
         status: 200,
         body: skyline_record
     };
-    context.log(JSON.stringify(context.res));
+    context.log(JSON.stringify(skyline_record));
     context.done(null, JSON.stringify(skyline_record));
 };

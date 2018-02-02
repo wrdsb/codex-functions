@@ -1,6 +1,6 @@
 module.exports = function (context, data) {
     var execution_timestamp = (new Date()).toJSON();  // format: 2012-04-23T18:25:43.511Z
-    var skyline_record;
+    var skyline_message;
     var old_codex_record;
     var new_codex_record_values;
     var new_codex_record;
@@ -24,7 +24,7 @@ module.exports = function (context, data) {
 
     context.bindings.codexIPPSPersonOut = new_codex_record;
 
-    skyline_record = {
+    skyline_message = {
         service: 'codex',
         operation: 'ipps_person_patch',
         function_name: context.executionContext.functionName,
@@ -35,11 +35,11 @@ module.exports = function (context, data) {
         },
         timestamp: execution_timestamp
     };
-
+    context.bindings.skylineEventHubMessage = JSON.stringify(skyline_message);
     context.res = {
         status: 200,
-        body: skyline_record
+        body: skyline_message
     };
-    context.log(JSON.stringify(skyline_record));
-    context.done(null, JSON.stringify(skyline_record));
+    context.log(JSON.stringify(skyline_message));
+    context.done(null, JSON.stringify(skyline_message));
 };

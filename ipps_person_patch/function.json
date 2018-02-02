@@ -25,6 +25,13 @@
       "direction": "out"
     },
     {
+      "name": "skylineEventHubMessage",
+      "type": "eventHub",
+      "path": "myeventhub",
+      "connection": "wrdsb-skyline_EVENTHUB",
+      "direction": "out"
+    },
+    {
       "name": "res",
       "type": "http",
       "direction": "out"

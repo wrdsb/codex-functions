@@ -27,7 +27,7 @@
     {
       "name": "skylineEventHubMessage",
       "type": "eventHub",
-      "path": "myeventhub",
+      "path": "codex-events",
       "connection": "wrdsb-skyline_EVENTHUB",
       "direction": "out"
     },

@@ -1,0 +1,37 @@
+{
+  "bindings": [
+    {
+      "name": "req",
+      "type": "httpTrigger",
+      "webHookType": "genericJson",
+      "direction": "in",
+      "methods": [
+        "post"
+      ]
+    },
+    {
+      "name": "codexRecordIn",
+      "type": "documentDB",
+      "databaseName": "wrdsb-codex",
+      "collectionName": "groups-memberships-ideal",
+      "id" : "{group}",
+      "connection": "wrdsb-codex_DOCUMENTDB",
+      "direction": "in"
+    },
+    {
+      "name": "codexRecordOut",
+      "type": "documentDB",
+      "databaseName": "wrdsb-codex",
+      "collectionName": "groups-memberships-ideal",
+      "createIfNotExists": true,
+      "connection": "wrdsb-codex_DOCUMENTDB", 
+      "direction": "out"
+    },
+    {
+      "name": "res",
+      "type": "http",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}

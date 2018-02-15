@@ -16,7 +16,7 @@ module.exports = function (context, data) {
     }
     
     // Get the current record from Codex
-    current_record = context.bindings.codexGroupIn;
+    current_record = context.bindings.codexRecordIn;
     context.log(current_record);
 
     if (current_record) {
@@ -27,7 +27,7 @@ module.exports = function (context, data) {
     }
     context.log(merged_record);
 
-    context.bindings.codexGroupOut = merged_record;
+    context.bindings.codexRecordOut = merged_record;
 
     context.done();
 };

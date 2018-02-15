@@ -6,7 +6,7 @@ module.exports = function (context, data) {
     // TODO: Fail if data does not include email
 
     // Get the current record from Codex
-    current_record = context.bindings.codexIPPSPersonIn;
+    current_record = context.bindings.codexRecordIn;
     context.log(current_record);
 
     if (current_record) {

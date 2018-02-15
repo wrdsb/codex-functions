@@ -13,7 +13,7 @@ module.exports = function (context, data) {
     }
 
     // Simply write data to database, regardless of what might already be there    
-    context.bindings.codexGroupOut = data;
+    context.bindings.codexRecordOut = data;
 
     context.done();
 };

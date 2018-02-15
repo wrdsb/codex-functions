@@ -10,7 +10,7 @@
       ]
     },
     {
-      "name": "codexIPPSPersonIn",
+      "name": "codexRecordIn",
       "type": "documentDB",
       "databaseName": "wrdsb-codex",
       "collectionName": "ipps-people",
@@ -19,7 +19,7 @@
       "direction": "in"
     },
     {
-      "name": "codexIPPSPersonOut",
+      "name": "codexRecordOut",
       "type": "documentDB",
       "databaseName": "wrdsb-codex",
       "collectionName": "ipps-people",

@@ -6,7 +6,7 @@ module.exports = function (context, data) {
     var new_codex_record_values;
     var new_codex_record;
 
-    old_codex_record = context.bindings.codexIPPSPersonIn;
+    old_codex_record = context.bindings.codexRecordIn;
     new_codex_record_values = data;
 
     // TODO: Fail if data does not include ein
@@ -24,7 +24,7 @@ module.exports = function (context, data) {
         new_codex_record = new_codex_record_values;
     }
 
-    context.bindings.codexIPPSPersonOut = new_codex_record;
+    context.bindings.codexRecordOut = new_codex_record;
 
     skyline_message = {
         event_type: 'function_invocation',

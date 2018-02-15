@@ -10,7 +10,7 @@
       ]
     },
     {
-      "name": "codexGroupOut",
+      "name": "codexRecordOut",
       "type": "documentDB",
       "databaseName": "wrdsb-codex",
       "collectionName": "groups-groups",

@@ -10,7 +10,7 @@ module.exports = function (context, data) {
     // TODO: Fail if data does not include id
 
     // Get the current record from Codex
-    current_record = context.bindings.codexGroupIn;
+    current_record = context.bindings.codexRecordIn;
 
     if (current_record) {
         context.log(current_record);
@@ -34,7 +34,7 @@ module.exports = function (context, data) {
 
         // Merge request object into current record
         updated_record = Object.assign(current_record);
-        context.bindings.codexGroupOut = updated_record;
+        context.bindings.codexRecordOut = updated_record;
 
         context.log(updated_record);
         context.done();

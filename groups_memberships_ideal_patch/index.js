@@ -29,7 +29,7 @@ module.exports = function (context, data) {
     flynn_event = {
         event_type: 'function_invocation',
         app: 'wrdsb-codex',
-        operation: 'ipps_person_patch',
+        operation: 'groups_memberships_ideal_patch',
         function_name: context.executionContext.functionName,
         invocation_id: context.executionContext.invocationId,
         data: {

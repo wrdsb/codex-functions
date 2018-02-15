@@ -1,6 +1,6 @@
 module.exports = function (context, data) {
     var execution_timestamp = (new Date()).toJSON();  // format: 2012-04-23T18:25:43.511Z
-    var skyline_message;
+    var flynn_event;
 
     var old_codex_record;
     var new_codex_record_values;
@@ -26,7 +26,7 @@ module.exports = function (context, data) {
 
     context.bindings.codexRecordOut = new_codex_record;
 
-    skyline_message = {
+    flynn_event = {
         event_type: 'function_invocation',
         app: 'wrdsb-codex',
         operation: 'ipps_person_patch',
@@ -38,11 +38,11 @@ module.exports = function (context, data) {
         },
         timestamp: execution_timestamp
     };
-    context.bindings.skylineEvents = JSON.stringify(skyline_message);
+    //context.bindings.flynnGrid = JSON.stringify(flynn_event);
     context.res = {
         status: 200,
-        body: skyline_message
+        body: flynn_event
     };
-    context.log(JSON.stringify(skyline_message));
-    context.done(null, JSON.stringify(skyline_message));
+    context.log(JSON.stringify(flynn_event));
+    context.done(null, JSON.stringify(flynn_event));
 };

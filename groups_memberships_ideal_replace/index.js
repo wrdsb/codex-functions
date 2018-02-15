@@ -32,7 +32,7 @@ module.exports = function (context, data) {
         },
         timestamp: execution_timestamp
     };
-    //context.bindings.skylineEvents = JSON.stringify(skyline_message);
+    //context.bindings.flynnGrid = JSON.stringify(flynn_event);
     context.res = {
         status: 200,
         body: flynn_event

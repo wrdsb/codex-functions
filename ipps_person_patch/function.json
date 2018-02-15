@@ -28,13 +28,6 @@
       "direction": "out"
     },
     {
-      "name": "skylineEvents",
-      "type": "eventHub",
-      "path": "events",
-      "connection": "wrdsb-skyline_EVENTHUB",
-      "direction": "out"
-    },
-    {
       "name": "res",
       "type": "http",
       "direction": "out"

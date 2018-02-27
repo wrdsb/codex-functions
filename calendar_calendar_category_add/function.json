@@ -13,7 +13,7 @@
       "name": "codexRecordIn",
       "type": "documentDB",
       "databaseName": "wrdsb-codex",
-      "collectionName": "groups-groups",
+      "collectionName": "calendar-calendars",
       "id" : "{id}",
       "connection": "wrdsb-codex_DOCUMENTDB",     
       "direction": "in"
@@ -22,7 +22,7 @@
       "name": "codexRecordOut",
       "type": "documentDB",
       "databaseName": "wrdsb-codex",
-      "collectionName": "groups-groups",
+      "collectionName": "calendar-calendars",
       "createIfNotExists": true,
       "connection": "wrdsb-codex_DOCUMENTDB",     
       "direction": "out"

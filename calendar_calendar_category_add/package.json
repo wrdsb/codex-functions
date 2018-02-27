@@ -1,5 +1,5 @@
 {
-  "name": "groups_group_category_add",
+  "name": "calendar_calendar_category_add",
   "version": "0.0.1",
   "description": "Add a category to a Google Group.",
   "main": "index.js",

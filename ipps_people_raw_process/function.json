@@ -20,7 +20,7 @@
       "name": "peopleNow",
       "type": "blob",
       "direction": "out",
-      "path": "ipps-people/people_now.json",
+      "path": "ipps-people/people-now.json",
       "connection": "wrdsbcodex_STORAGE"
     },
     {

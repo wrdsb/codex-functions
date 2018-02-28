@@ -1,0 +1,13 @@
+{
+  "name": "ipps_people_raw_process",
+  "version": "0.0.1",
+  "description": "Process the Codex blob ipps-people/raw.json, converting raw database records into IPPS Person objects and storing those objects in the people-now.json blob.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+  }
+}

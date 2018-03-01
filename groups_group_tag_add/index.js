@@ -16,7 +16,7 @@ module.exports = function (context, data) {
         context.log(current_record);
 
         // Get current record's categories
-        current_tags = current_record.tags;
+        current_tags = current_record["tags"];
 
         if (current_tags && Array.isArray(current_tags)) {
             if (current_tags.indexOf(new_tag) === -1) {
@@ -30,7 +30,7 @@ module.exports = function (context, data) {
         }
         
         // Merge categories array back into current record
-        current_record.tags = updated_tags;
+        current_record["tags"] = updated_tags;
 
         // Merge request object into current record
         updated_record = Object.assign(current_record);

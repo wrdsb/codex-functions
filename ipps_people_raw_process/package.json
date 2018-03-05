@@ -9,5 +9,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+     "async": "^2.5.0"
   }
 }

@@ -5,6 +5,8 @@ module.exports = function (context, data) {
 
     people_raw.forEach(function(row) {
         var personRecord = {
+            id:             row.ipps_ein,
+            ein:            row.ipps_ein,
             username:       row.username.toLowerCase(),
             name:           row.first_name + ' ' + row.last_name,
             sortable_name:  row.last_name + ', ' + row.first_name,

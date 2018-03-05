@@ -1,6 +1,7 @@
 module.exports = function (context, data) {
     var people_raw = context.bindings.peopleRaw;
-    var peopleRecords = {};
+    var peopleObject = {};
+    var peopleArray = [];
 
     people_raw.forEach(function(row) {
         var personRecord = {
@@ -36,17 +37,21 @@ module.exports = function (context, data) {
         var ein = row.ipps_ein;
         var position_id = row.ipps_position_id;
 
-        if (peopleRecords[ein]) {
-            if (personPosition.ipps_home_location_indicator === 'Y') {peopleRecords[ein].ipps_home_location = personPosition.ipps_location_code;}
-            peopleRecords[ein].positions[position_id] = personPosition;
+        if (peopleObject[ein]) {
+            if (personPosition.ipps_home_location_indicator === 'Y') {peopleObject[ein].ipps_home_location = personPosition.ipps_location_code;}
+            peopleObject[ein].positions[position_id] = personPosition;
         } else {
             if (personPosition.ipps_home_location_indicator === 'Y') {personRecord.ipps_home_location = personPosition.ipps_location_code;}
             personRecord.positions = {};
             personRecord.positions[position_id] = personPosition;
-            peopleRecords[ein] = personRecord;
+            peopleObject[ein] = personRecord;
         }
     });
+    
+    Object.getOwnPropertyNames(peopleObject).forEach(function (person) {
+        peopleArray.push(person);
+    });
 
-    context.bindings.peopleNow = peopleRecords;
+    context.bindings.peopleNow = peopleArray;
     context.done();
 };

@@ -1,9 +1,9 @@
 module.exports = function (context, data) {
-    var people_raw = context.bindings.peopleRaw;
+    var rows = context.bindings.iamwpRaw;
     var peopleObject = {};
     var peopleArray = [];
 
-    people_raw.forEach(function(row) {
+    rows.forEach(function(row) {
         var personRecord = {
             id:             row.ipps_ein,
             ein:            row.ipps_ein,

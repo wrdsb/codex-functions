@@ -13,7 +13,7 @@
       "name": "iamwpRaw",
       "type": "blob",
       "direction": "in",
-      "path": "ipps/iamwp-raw.json",
+      "path": "ipps/raw.json",
       "connection": "wrdsbcodex_STORAGE"
     },
     {

@@ -10,20 +10,24 @@ module.exports = function (context, data) {
 
     if (!old_codex_record) { old_codex_record = {}; }
 
-    // TODO: Fail if data does not include group email address
+    // TODO: Fail if data does not include email
 
-    // We use the Person's EIN as the Cosmos DB record's id
-    if (new_codex_record.group) {
-        new_codex_record.id = new_codex_record.group;
+    // We use the Group's email address as the Cosmos DB record's id
+    // and store the 'real' id as google_id.
+    // So, if we have an id, and it's not an email address,
+    // move it into the google_id, and replace it with the email address
+    if (data.id && data.id.indexOf('@') == -1) {
+        data.google_id = data.id;
+        data.id = data.email;
     }
-
+    
     // Simply write data to database, regardless of what might already be there    
     context.bindings.codexRecordOut = new_codex_record;
 
     flynn_event = {
         event_type: 'function_invocation',
         app: 'wrdsb-codex',
-        operation: 'groups_memberships_ideal_replace',
+        operation: 'groups_memberships_supplemental_replace',
         function_name: context.executionContext.functionName,
         invocation_id: context.executionContext.invocationId,
         data: {

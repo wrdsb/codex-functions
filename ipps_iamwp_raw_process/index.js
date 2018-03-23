@@ -4,11 +4,11 @@ module.exports = function (context, data) {
     var peopleObject = {};
     var peopleArray = [];
     var jobsObject = {};
-    var jobsArray = {};
+    var jobsArray = [];
     var groupsObject = {};
-    var groupsArray = {};
+    var groupsArray = [];
     var locationsObject = {};
-    var locationsArray = {};
+    var locationsArray = [];
 
     rows.forEach(function(row) {
         // Create the main part of a Person object

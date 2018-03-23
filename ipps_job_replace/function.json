@@ -1,0 +1,51 @@
+{
+  "bindings": [
+    {
+      "name": "req",
+      "type": "httpTrigger",
+      "webHookType": "genericJson",
+      "direction": "in",
+      "methods": [
+        "post"
+      ]
+    },
+    {
+      "name": "codexRecordIn",
+      "type": "documentDB",
+      "databaseName": "wrdsb-codex",
+      "collectionName": "ipps-jobs",
+      "id" : "{job_code}",
+      "connection": "wrdsb-codex_DOCUMENTDB",     
+      "direction": "in"
+    },
+    {
+      "name": "codexRecordOut",
+      "type": "documentDB",
+      "databaseName": "wrdsb-codex",
+      "collectionName": "ipps-jobs",
+      "createIfNotExists": true,
+      "connection": "wrdsb-codex_DOCUMENTDB",     
+      "direction": "out"
+    },
+    {
+      "name": "flynnEventOut",
+      "type": "eventHub",
+      "path": "firehose",
+      "connection": "wrdsb-flynn_EVENTHUB",
+      "direction": "out"
+    },
+    {
+      "name": "flynnBlobOut",
+      "type": "blob",
+      "path": "event-data/{rand-guid}",
+      "connection": "wrdsbflynn_STORAGE",
+      "direction": "out"
+    },
+    {
+      "name": "res",
+      "type": "http",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}

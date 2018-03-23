@@ -29,13 +29,6 @@
     },
     {
       "name": "flynnEventOut",
-      "type": "eventHub",
-      "path": "firehose",
-      "connection": "wrdsb-flynn_EVENTHUB",
-      "direction": "out"
-    },
-    {
-      "name": "flynnBlobOut",
       "type": "blob",
       "path": "event-data/{rand-guid}",
       "connection": "wrdsbflynn_STORAGE",

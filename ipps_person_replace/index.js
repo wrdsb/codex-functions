@@ -21,18 +21,24 @@ module.exports = function (context, data) {
     context.bindings.codexRecordOut = new_codex_record;
 
     flynn_event = {
-        event_type: 'function_invocation',
-        app: 'wrdsb-codex',
-        operation: 'ipps_person_replace',
-        function_name: context.executionContext.functionName,
-        invocation_id: context.executionContext.invocationId,
+        id: 'codex-functions-' + context.executionContext.functionName +'-'+ context.executionContext.invocationId,
+        eventType: 'Codex.IPPS.Person.Replace',
+        eventTime: execution_timestamp,
+        //subject: ,
         data: {
-            old_record: old_codex_record,
-            new_record: new_codex_record
+            event_type: 'function_invocation',
+            app: 'wrdsb-codex',
+            function_name: context.executionContext.functionName,
+            invocation_id: context.executionContext.invocationId,
+            data: {
+                old_record: old_codex_record,
+                new_record: new_codex_record
+            },
+            timestamp: execution_timestamp
         },
-        timestamp: execution_timestamp
+        dataVersion: '1'
     };
-    //context.bindings.flynnGrid = JSON.stringify(flynn_event);
+    context.bindings.flynnEventOut = JSON.stringify(flynn_event);
     context.res = {
         status: 200,
         body: flynn_event

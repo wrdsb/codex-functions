@@ -36,8 +36,7 @@ module.exports = function (context, data) {
         },
         dataVersion: '1'
     };
-    //context.bindings.flynnEventOut = JSON.stringify(flynn_event);
-    //context.bindings.flynnBlobOut = JSON.stringify(flynn_event_data);
+    context.bindings.flynnEventOut = JSON.stringify(flynn_event);
     context.res = {
         status: 200,
         body: flynn_event

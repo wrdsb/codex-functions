@@ -10,8 +10,8 @@ module.exports = function (context, data) {
     
     context.res = {
         status: 200,
-        body: data_out
+        body: JSON.stringify(data_out)
     };
 
-    context.done(null, data_out);
+    context.done(null, JSON.stringify(data_out));
 };

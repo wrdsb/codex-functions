@@ -1,0 +1,13 @@
+{
+  "name": "codex_people_set_read",
+  "version": "0.0.1",
+  "description": "Reads a single codex-people-set from Codex Cosmos DB.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+  }
+}

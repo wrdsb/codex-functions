@@ -19,9 +19,16 @@
         "direction": "in"
       },
       {
-        "name": "codexBlobOut",
+        "name": "codexBlobOutArray",
         "type": "blob",
-        "path": "people-sets-lists/all.json",
+        "path": "people-sets-lists/all-array.json",
+        "connection": "wrdsbcodex_STORAGE",
+        "direction": "out"
+      },
+      {
+        "name": "codexBlobOutObject",
+        "type": "blob",
+        "path": "people-sets-lists/all-object.json",
         "connection": "wrdsbcodex_STORAGE",
         "direction": "out"
       },

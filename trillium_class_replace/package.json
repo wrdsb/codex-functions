@@ -1,0 +1,13 @@
+{
+  "name": "trillium_class_replace",
+  "version": "0.0.1",
+  "description": "Perform a full replacement of a Trillium Class record.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+  }
+}

@@ -26,7 +26,7 @@ module.exports = function (context, data) {
 
     context.bindings.codexRecordOut = new_codex_record;
 
-    flynn_event = {
+    event = {
         event_type: 'function_invocation',
         app: 'wrdsb-codex',
         operation: 'ipps_person_patch',
@@ -41,8 +41,8 @@ module.exports = function (context, data) {
     //context.bindings.flynnGrid = JSON.stringify(flynn_event);
     context.res = {
         status: 200,
-        body: flynn_event
+        body: event
     };
-    context.log(JSON.stringify(flynn_event));
-    context.done(null, JSON.stringify(flynn_event));
+    context.log(JSON.stringify(event));
+    context.done(null, JSON.stringify(event));
 };

@@ -12,8 +12,12 @@ module.exports = function (context, data) {
     // TODO: Fail if data does not include ein
 
     // We use the Person's ein as the Cosmos DB record's id
-    if (new_codex_record_values.ein) {
-        new_codex_record_values.id = new_codex_record_values.ein;
+    if (!new_codex_record_values.id) {
+        if (new_codex_record_values.ein) {
+            new_codex_record_values.id = new_codex_record_values.ein;
+        } else {
+            context.done('No ID or EIN provided.');
+        }
     }
 
     if (old_codex_record) {

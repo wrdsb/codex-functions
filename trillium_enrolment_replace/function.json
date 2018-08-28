@@ -28,13 +28,6 @@
       "direction": "out"
     },
     {
-      "name": "flynnEventOut",
-      "type": "blob",
-      "path": "event-data/{rand-guid}",
-      "connection": "wrdsbflynn_STORAGE",
-      "direction": "out"
-    },
-    {
       "name": "res",
       "type": "http",
       "direction": "out"

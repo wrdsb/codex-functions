@@ -1,6 +1,6 @@
 module.exports = function (context, data) {
     var execution_timestamp = (new Date()).toJSON();  // format: 2012-04-23T18:25:43.511Z
-    var flynn_event;
+    var event;
 
     var old_codex_record;
     var new_codex_record;
@@ -16,7 +16,7 @@ module.exports = function (context, data) {
     // Simply write data to database, regardless of what might already be there    
     context.bindings.codexRecordOut = new_codex_record;
 
-    flynn_event = {
+    event = {
         id: 'codex-functions-' + context.executionContext.functionName +'-'+ context.executionContext.invocationId,
         eventType: 'Codex.Trillium.Class.Replace',
         eventTime: execution_timestamp,
@@ -34,11 +34,11 @@ module.exports = function (context, data) {
         },
         dataVersion: '1'
     };
-    context.bindings.flynnEventOut = JSON.stringify(flynn_event);
+    //context.bindings.flynnEventOut = JSON.stringify(flynn_event);
     context.res = {
         status: 200,
-        body: flynn_event
+        body: event
     };
-    context.log(JSON.stringify(flynn_event));
-    context.done(null, JSON.stringify(flynn_event));
+    context.log(JSON.stringify(event));
+    context.done(null, JSON.stringify(event));
 };

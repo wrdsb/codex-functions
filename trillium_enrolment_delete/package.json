@@ -1,0 +1,13 @@
+{
+  "name": "trillium_enrolment_delete",
+  "version": "0.0.1",
+  "description": "The Enrolment with the ID specified in the request payload is deleted from Codex.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+  }
+}

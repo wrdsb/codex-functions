@@ -17,6 +17,7 @@ module.exports = function (context, data) {
 
     // We use the Enrolment's school_code, class_code, and student_number as the Cosmos DB record's id
     new_codex_record.id = new_codex_record.school_code + '-' + new_codex_record.class_code + '-' + new_codex_record.student_number;
+    new_codex_record.id = new_codex_record.id.replace('/', '-');
 
     // Simply write data to database, regardless of what might already be there    
     context.bindings.codexRecordOut = new_codex_record;

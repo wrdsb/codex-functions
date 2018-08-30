@@ -10,9 +10,15 @@ module.exports = function (context, data) {
 
     if (!old_codex_record) { old_codex_record = {}; }
 
-    // We use the Class's school_code and class_code as the Cosmos DB record's id
-    new_codex_record.id = new_codex_record.school_code + '-' + new_codex_record.class_code;
+    new_codex_record.created_at = (old_codex_record.created_at ? old_codex_record.created_at : execution_timestamp);
+    new_codex_record.updated_at = execution_timestamp;
+    new_codex_record.deleted_at = null;
+    new_codex_record.deleted = false;
 
+    // We use the Enrolment's school_code, class_code, and student_number as the Cosmos DB record's id
+    new_codex_record.id = new_codex_record.school_code + '-' + new_codex_record.class_code;
+    new_codex_record.id = new_codex_record.id.replace('/', '-');
+    
     // Simply write data to database, regardless of what might already be there    
     context.bindings.codexRecordOut = new_codex_record;
 

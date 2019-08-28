@@ -1,6 +1,6 @@
 module.exports = function (context, data) {
     var execution_timestamp = (new Date()).toJSON();  // format: 2012-04-23T18:25:43.511Z
-    var flynn_event;
+    var event;
 
     var old_codex_record;
     var new_codex_record_values;
@@ -8,6 +8,8 @@ module.exports = function (context, data) {
 
     old_codex_record = context.bindings.codexRecordIn;
     new_codex_record_values = data;
+
+    context.log(new_codex_record_values);
 
     // TODO: Fail if data does not include ein
 
